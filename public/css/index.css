@@ -43,10 +43,17 @@
 /* navbar styling */
 .navbar-brand {
 	font-family: "Didact Gothic", sans-serif;
+	font-size: 22px;
 }
 
 .dropdown-menu {
 	font-family: "Didact Gothic", sans-serif;
+	font-size: 12px;
+}
+
+.dropdown {
+	font-family: "Didact Gothic", sans-serif;
+	font-size: 12px;
 }
 
 
