@@ -1,0 +1,23 @@
+{
+   "packages": [
+       {
+           "name": "Package Deal #1",
+           "price": "$129.00",
+           "picture": "fill in later",
+           "description": "fill in later"
+       },
+       {
+           "name": "Package Deal #2",
+           "price": "$149.00",
+           "picture": "fill in later",
+           "description": "fill in later"
+       },
+       {
+           "name": "Package Deal #3",
+           "price": "$149.00",
+           "picture": "fill in later",
+           "description": "fill in later"
+       }
+   ]
+}
+

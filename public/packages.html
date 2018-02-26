@@ -16,9 +16,73 @@
     <!--CSS file--> 
     <link href="css/index.css" rel="stylesheet">
 
-  </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <body>
+    <!--<script>
+        $(function() {
+            //var people = [];
+            $.getJSON('packages.json', function(data) {
+                $.each(data.packages, function(i, f) {
+                    var tblRow = "<tr>" + "<td>" + f.name + "</td>" +
+                    "<td>" + f.price + "</td>" + "<td>" + f.description + "</td>" + "<td>" + f.picture + "</td>" + "</tr>"
+                    $(tblRow).appendTo("#userdata tbody");
+                });
+            });
+        });
+    </script>-->
+
+    <script>
+        $(function() {
+            $.getJSON('packages.json', function(data) {
+                $.each(data.packages, function(i, f) {
+                    //for(var i = 0;i < data.packages.length; i++){
+                    
+                    var template = document.getElementById('template').innerHTML;
+
+                    //Compile the template
+                    var compiled_template = Handlebars.compile(template);
+
+                    //Render the data into the template
+                    var rendered = compiled_template({name: f.name, price: f.price, description: f.description, picture: f.picture});
+                    console.log(rendered.toString());
+
+                    //Overwrite the contents of #target with the renderer HTML
+                    document.getElementById('target'+i).innerHTML = rendered;
+                    //}
+                });
+            });
+        });
+    </script>
+
+    </head>
+
+    <body>
+
+        <!--<script>
+            window.onload = function() {
+                //Grab the inline template
+                var template = document.getElementById('template').innerHTML;
+
+                //Compile the template
+                var compiled_template = Handlebars.compile(template);
+
+                //Render the data into the template
+                var rendered = compiled_template({name: "Luke", power: "force"});
+
+                //Overwrite the contents of #target with the renderer HTML
+                document.getElementById('target').innerHTML = rendered;
+            }
+        </script>
+
+        <div id="target"></div>
+
+        <script id="template" type="text/x-handlebars-template">
+            <p>Use the <strong>{{name}}</strong>, {{power}}!</p>
+        </script>-->
+
+
+    <!--top navigation
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -49,17 +113,43 @@
               <img src="img/shopping-cart.png" alt="shopping cart" style="width:32px;height:32px;">
             </form>
         </div>
-    </nav>
+    </nav>-->
+    <!--end navigation-->
 
+    <!--handlebars attempt 1
     <div class="hero-image" style="background-image: url('img/jumper.png');">
         <div class="hero-text">
             <p>Packages<p>
         </div>
     </div>
 
+    <div class="item-cat">
+        <div class="row">
+            <div class="col-6 col-sm-3">
+                {{#each package_deal}}
+                    {{package_name}}
+                    {{package_price}}
+                    {{package_description}}
+                {{/each}}
+            </div>
+
+        </div>
+    </div>-->
+
+    <div class = ".col-xs-6" id="target0"></div>
+    <div class = ".col-xs-6" id="target1"></div>
+    <div class = ".col-xs-6" id="target2"></div>
+
+        <script id="template">
+            <p>{{name}}, {{price}}</p>
+        </script>
+
+
+    <!--footer -->
     <div class="footer">
         <p>© 2018 Peninsula Party Rentals. All rights reserved.</p>
     </div>
+    <!--end of footer -->
     
   </body>
 
