@@ -38,11 +38,18 @@
 .hero-text button:hover {
   background-color: #555;
   color: white;
+	font-family: "Didact Gothic", sans-serif;
 }
 /* navbar styling */
 .navbar-brand {
 	font-family: "Didact Gothic", sans-serif;
 }
+
+.dropdown-menu {
+	font-family: "Didact Gothic", sans-serif;
+}
+
+
 /* footer styling */
 .footer {
     position: fixed;
