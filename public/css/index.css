@@ -48,12 +48,17 @@
 
 .dropdown-menu {
 	font-family: "Didact Gothic", sans-serif;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .dropdown {
 	font-family: "Didact Gothic", sans-serif;
-	font-size: 12px;
+	font-size: 14px;
+}
+
+.nav navbar-nav {
+	font-family: "Didact Gothic", sans-serif;
+	font-size: 14px;
 }
 
 
