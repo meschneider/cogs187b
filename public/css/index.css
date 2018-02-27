@@ -3,13 +3,14 @@ html {
   height: 100%;
 }
 body{
-  font-family: "Didact Gothic", sans-serif;
+  font-family: "Didact Gothic", sans-serif !important;
   height: 100%;
   overflow: auto;
   font-size:16px;
 }
 
 /* navbar styling */
+
 .navbar-brand {
   font-size: 24px;
 }
@@ -141,14 +142,9 @@ section {
   padding-right: 50px;
 }
 .about-contact{
-  padding-top: 50px; 
+  padding-top: 50px;
   padding-left:175px;
   padding-right:175px;
   /* padding so the bottom of the div isn't cut off by the footer */
   padding-bottom: 100px;
 }
-
-
-
-
-
