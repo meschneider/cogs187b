@@ -1,3 +1,7 @@
+body{
+  font-family: "Didact Gothic", sans-serif;
+}
+
 /* drop down styling */
 .dropdown:hover .dropdown-menu {
 	display: block;
@@ -38,26 +42,21 @@
 .hero-text button:hover {
   background-color: #555;
   color: white;
-	font-family: "Didact Gothic", sans-serif;
 }
 /* navbar styling */
 .navbar-brand {
-	font-family: "Didact Gothic", sans-serif;
 	font-size: 22px;
 }
 
 .dropdown-menu {
-	font-family: "Didact Gothic", sans-serif;
 	font-size: 14px;
 }
 
 .dropdown {
-	font-family: "Didact Gothic", sans-serif;
 	font-size: 14px;
 }
 
 .menu {
-	font-family: "Didact Gothic", sans-serif;
 	font-size: 14px;
 }
 
@@ -78,4 +77,9 @@
   padding-top: 75px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/*used to display the packages */
+section {
+  padding-top: 75px;
 }
