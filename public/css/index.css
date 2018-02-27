@@ -81,6 +81,29 @@ body{
   padding-right: 30px;
   padding-bottom:100px;
 }
+.img-cap{
+  visibility: hidden;
+  color:black;
+  text-align: center;
+  position: absolute;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 5px solid white;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.img__wrap:hover{
+  opacity: 0.5;
+  visibility: visible;
+}
+.img__wrap:hover .img-cap{
+  visibility: visible;
+}
 
 /*------------------ packages.html styling ------------------*/
 
@@ -123,7 +146,6 @@ section {
   /* padding so the bottom of the div isn't cut off by the footer */
   padding-bottom: 100px;
 }
-
 
 
 

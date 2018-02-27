@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Balloons</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!--icon-->
+    <link rel="icon" type="image/png" href="img/logo_transparent.png">
+
+    <!--Didact Gothic Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+
+    <!--CSS file--> 
+    <link href="../css/index.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--script function to render json data to html page-->
+    <script>
+    $(function() {
+        $.getJSON('balloons.json', function(data) {
+            $.each(data.balloons, function(i, key) {
+                var htmlText = '';
+
+                htmlText += '<div class="col-6 col-sm-6">';
+                htmlText += '<p>' + key.name + '</p>';
+                htmlText += '<img src="' + key.picture + '">';
+                htmlText += '<p> Price: ' + key.price + '</p>';
+                htmlText += '<p> Description: ' + key.description + '</p>';
+                htmlText += '</div>';
+                $('section').append(htmlText);
+            });
+        });
+    });
+    </script>
+    <!--end script function-->
+
+    </head>
+
+    <body>
+
+    <!--top navigation-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Peninsula Party</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="active dropdown-toggle" data-toggle="dropdown">Products</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Balloons & Decorations</a></li>
+                        <li><a href="#">Cups & Utensils</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Jumpers</a></li>
+                        <li><a href="#">Machines & Accessories</a></li>
+                        <li><a href="#">Outdoor</a></li>
+                        <li><a href="#">Tables, Chairs, & Accessories</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="packages.html">Packages</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" action="/action_page.php">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default"><img src="../img/search-icon.png" alt="shopping cart" style="width:16px;height:16px;"></button>
+              <img src="../img/shopping-cart.png" alt="shopping cart" style="width:32px;height:32px;">
+            </form>
+        </div>
+    </nav>
+    <!--end navigation-->
+
+    <!--banner image-->
+    <div class="hero-image" style="background-image: url('../img/jumper.png');">
+        <div class="hero-text">
+            <p>Balloons & Decorations<p>
+        </div>
+    </div>
+    <!--end banner image-->
+
+    <!--section that json data is posted to-->
+    <section>
+    </section>
+
+    <!--footer -->
+    <div class="footer">
+        <p>© 2018 Peninsula Party Rentals. All rights reserved.</p>
+    </div>
+    <!--end of footer -->
+    
+  </body>
+
+</html>
