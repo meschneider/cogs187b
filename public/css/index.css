@@ -27,7 +27,7 @@ body{
   display: block;
 }
 
-.navbar-header {
+.navbar navbar-default navbar-fixed-top {
   background-color: transparent;
 }
 
