@@ -27,10 +27,6 @@ body{
   display: block;
 }
 
-.container-fluid {
-  background-color: transparent;
-}
-
 /* banner styling */
 .hero-image {
   height: 300px;
