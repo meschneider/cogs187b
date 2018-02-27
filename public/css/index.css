@@ -61,6 +61,11 @@ body{
   color: white;
 }
 
+.img-responsive {
+  width: 2400px;
+  height: 2400px;
+}
+
 /* footer styling */
 .footer {
     position: fixed;
