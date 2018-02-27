@@ -27,6 +27,10 @@ body{
   display: block;
 }
 
+.navbar-header {
+  background-color: transparent;
+}
+
 /* banner styling */
 .hero-image {
   height: 300px;
