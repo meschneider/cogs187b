@@ -60,7 +60,6 @@ body{
 	font-size: 14px;
 }
 
-
 /* footer styling */
 .footer {
     position: fixed;
@@ -82,4 +81,5 @@ body{
 /*used to display the packages */
 section {
   padding-top: 75px;
+  padding-bottom: 2075px;
 }

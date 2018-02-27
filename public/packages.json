@@ -3,55 +3,55 @@
        {
            "name": "Package Deal #1",
            "price": "$129.00",
-           "picture": "fill in later",
+           "picture": "img/package1.png",
            "description": "fill in later"
        },
        {
            "name": "Package Deal #2",
            "price": "$149.00",
-           "picture": "fill in later",
+           "picture": "img/package1.png",
            "description": "fill in later"
        },
        {
            "name": "Package Deal #3",
            "price": "$149.00",
-           "picture": "fill in later",
+           "picture": "img/package1.png",
            "description": "fill in later"
        },
        {
            "name": "Package Deal #4",
            "price": "$149.00",
-           "picture": "fill in later",
+           "picture": "img/package1.png",
            "description": "fill in later"
        },
        {
            "name": "Package Deal #5",
            "price": "$189.00",
-           "picture": "fill in later",
+           "picture": "img/package1.png",
            "description": "fill in later"
        },
        {
            "name": "Package Deal #6",
            "price": "$199.00",
-           "picture": "fill in later",
+           "picture": "img/package1.png",
            "description": "fill in later"
        },
        {
            "name": "Package Deal #7",
            "price": "$79.00",
-           "picture": "fill in later",
+           "picture": "img/package1.png",
            "description": "fill in later"
        },
        {
            "name": "Package Deal #8",
            "price": "$169.00",
-           "picture": "fill in later",
+           "picture": "img/package1.png",
            "description": "fill in later"
        },
        {
            "name": "Package Deal #9",
            "price": "$215.00",
-           "picture": "fill in later",
+           "picture": "img/package1.png",
            "description": "fill in later"
        }
    ]
