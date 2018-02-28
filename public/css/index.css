@@ -20,6 +20,8 @@ body{
 }
 .dropdown {
   font-size: 16px;
+}
+li.dropdown {
   color: #8558B5;
 }
 .menu {
