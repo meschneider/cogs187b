@@ -39,7 +39,6 @@ body{
 }
 .hero-text {
   text-align: center;
-  vertical-align: center;
   color: white;
 }
 .hero-text button {
@@ -102,6 +101,7 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #8558B5;
 }
 .img__wrap:hover{
   opacity: 0.5;
