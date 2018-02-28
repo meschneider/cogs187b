@@ -26,9 +26,6 @@ body{
 .dropdown:hover .dropdown-menu {
   display: block;
 }
-a:hover {
-    color: #8558B5;
-}
 
 /* banner styling */
 .hero-image {
@@ -67,6 +64,7 @@ a:hover {
 .img-responsive {
   width: 240px;
   height: 240px;
+  background-size: contain;
 }
 
 /* footer styling */
