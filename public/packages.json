@@ -1,55 +1,55 @@
 {
    "packages": [
        {
-           "name": "Package Deal #1",
+           "name": "Basic Backyard Package",
            "price": "$129.00",
            "picture": "img/package1.png",
            "description": "fill in later"
        },
        {
-           "name": "Package Deal #2",
+           "name": "Cotton Candy & Jumper Package",
            "price": "$149.00",
            "picture": "img/package2.png",
            "description": "fill in later"
        },
        {
-           "name": "Package Deal #3",
+           "name": "Popcorn & Jumper Package",
            "price": "$149.00",
            "picture": "img/package3.png",
            "description": "fill in later"
        },
        {
-           "name": "Package Deal #4",
+           "name": "Snowcone & Jumper Package",
            "price": "$149.00",
            "picture": "img/package4.png",
            "description": "fill in later"
        },
        {
-           "name": "Package Deal #5",
+           "name": "Margarita Package",
            "price": "$189.00",
            "picture": "img/package5.png",
            "description": "fill in later"
        },
        {
-           "name": "Package Deal #6",
+           "name": "Full Jumper & Cotton Candy Package",
            "price": "$199.00",
            "picture": "img/package6.png",
            "description": "fill in later"
        },
        {
-           "name": "Package Deal #7",
+           "name": "55CF Balloon Package",
            "price": "$79.00",
            "picture": "img/package7.png",
            "description": "fill in later"
        },
        {
-           "name": "Package Deal #8",
+           "name": "110CF Balloon Package",
            "price": "$169.00",
            "picture": "img/package8.png",
            "description": "fill in later"
        },
        {
-           "name": "Package Deal #9",
+           "name": "Full 4-in-1 Jumper Package",
            "price": "$215.00",
            "picture": "img/package9.png",
            "description": "fill in later"
