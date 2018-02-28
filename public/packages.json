@@ -9,7 +9,7 @@
        {
            "name": "Package Deal #2",
            "price": "$149.00",
-           "picture": "img/package1.png",
+           "picture": "img/package2.png",
            "description": "fill in later"
        },
        {
@@ -56,4 +56,3 @@
        }
    ]
 }
-
