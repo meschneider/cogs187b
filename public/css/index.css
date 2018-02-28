@@ -39,6 +39,7 @@ body{
 }
 .hero-text {
   text-align: center;
+  vertical-align: center;
   color: white;
 }
 .hero-text button {
@@ -51,7 +52,7 @@ body{
   text-align: center;
   color: white;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 15px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
