@@ -32,8 +32,9 @@
                 htmlText += '<div class="col-6 col-sm-6">';
                 htmlText += '<font color="#8558B5" size="+2">' + key.name + '</font>';
                 htmlText += '<img class="img-responsive" src="' + key.picture + '">';
-                htmlText += '<p> <font size="+1"> ' + key.description + '</p> </font> ';
+                htmlText += '<p> <font size="+1"> ' + key.packagename + '</p> </font> ';
                 htmlText += '<p> Price: ' + key.price + '</p>';
+                htmlText += '<p> ' + key.description + '</p>';
                 htmlText += '</div>';
 
                 $('section').append(htmlText);

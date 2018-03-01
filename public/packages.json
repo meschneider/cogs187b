@@ -4,7 +4,8 @@
            "name": "Package Deal #1",
            "price": "$129.00",
            "picture": "img/package1.png",
-           "description": "Basic Party Package"
+           "packagename": "Basic Party Package",
+           "description": "This package includes the basic essentials for your backyard party."
        },
        {
            "name": "Package Deal #2",
