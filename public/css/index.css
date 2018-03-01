@@ -61,8 +61,8 @@ body{
 }
 
 .img-cont{
-  width: 240px;
-  height: 240px;
+  width: 100px;
+  height: 100px;
   background-size: contain;
 }
 
