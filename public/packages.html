@@ -30,10 +30,10 @@
                 var htmlText = '';
 
                 htmlText += '<div class="col-6 col-sm-6">';
-                htmlText += '<p>' + key.name + '</p>';
+                htmlText += '<font color="#8558B5" size="+2">' + key.name + '</font>';
                 htmlText += '<img class="img-responsive" src="' + key.picture + '">';
+                htmlText += '<p> <font size="+1"> ' + key.description + '</p> </font> ';
                 htmlText += '<p> Price: ' + key.price + '</p>';
-                htmlText += '<p> Description: ' + key.description + '</p>';
                 htmlText += '</div>';
 
                 $('section').append(htmlText);
