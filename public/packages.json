@@ -11,49 +11,57 @@
            "name": "Package Deal #2",
            "price": "$149.00",
            "picture": "img/package2.png",
-           "description": "fill in later"
+           "packagename": "Cotton Candy Package",
+           "description": "This package meets all your cotton candy needs and includes a basic jumper."
        },
        {
            "name": "Package Deal #3",
            "price": "$149.00",
            "picture": "img/package3.png",
-           "description": "fill in later"
+           "packagename": "Popcorn Party Package",
+           "description": "This package meets all your popcorn needs and includes a basic jumper."
        },
        {
            "name": "Package Deal #4",
            "price": "$149.00",
            "picture": "img/package4.png",
-           "description": "fill in later"
-       },
+           "packagename": "Snowcone Package",
+           "description": "This package meets all your snowcone needs and includes a basic jumper."
+           },
        {
            "name": "Package Deal #5",
            "price": "$189.00",
            "picture": "img/package5.png",
-           "description": "fill in later"
-       },
+           "packagename": "Margarita Memories",
+           "description": "Enjoy 2 different types of margarita flavors."
+           },
        {
            "name": "Package Deal #6",
            "price": "$199.00",
            "picture": "img/package6.png",
-           "description": "fill in later"
-       },
+           "packagename": "Cotton Candy Dreams",
+           "description": "A guaranteed fun party with cotton candy, a jumper, and essentials provided."
+            },
        {
            "name": "Package Deal #7",
            "price": "$79.00",
            "picture": "img/package7.png",
-           "description": "fill in later"
-       },
+           "packagename": "Balloon Party 1",
+           "description": "Your basic balloon supplies!"
+            },
        {
            "name": "Package Deal #8",
            "price": "$169.00",
            "picture": "img/package8.png",
-           "description": "fill in later"
-       },
+           "packagename": "Balloon Party 2",
+           "description": "Your basic balloon supplies!"
+            },
        {
            "name": "Package Deal #9",
            "price": "$215.00",
            "picture": "img/package9.png",
-           "description": "fill in later"
-       }
+           "packagename": "Basic Party Package 2",
+           "description": "This package includes the basic essentials for your backyard party."
+          }
    ]
 }
