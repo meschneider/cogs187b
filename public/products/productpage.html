@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
 
-    <title>Balloons</title>
+    <title>Product Page</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -20,31 +20,7 @@
     <link href="../css/index.css" rel="stylesheet">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!--script function to render json data to html page-->
-    <script>
-    $(function() {
-        $.getJSON('balloons.json', function(data) {
-            $.each(data.balloons, function(i, key) {
-                var htmlText = '';
-
-                htmlText += '<div class="col-6 col-sm-6">';
-                htmlText += '<div class="row top-buffer">';
-                htmlText += '<font color="#8558B5" size="+2">' + key.name + '</font>';
-                htmlText += '<img class="img-responsive" src="' + key.picture + '">';
-                htmlText += '<p> Price: ' + key.price + '</p>';
-                htmlText += '<p> ' + key.description + '</p>';
-                htmlText += '<a href="productpage.html"><button class="btn btn-default" type="submit" style=" color:white; background-color: #8558B5;">View More Details</button><a>';
-                htmlText += '</div>';
-                htmlText += '</div>';
-
-                $('section').append(htmlText);
-            });
-        });
-    });
-    </script>
-    <!--end script function-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
 
     </head>
 
@@ -58,7 +34,7 @@
             </div>
             <ul class="nav navbar-nav">
                 <li class="dropdown active">
-                    <a class="active dropdown-toggle" data-toggle="dropdown">Products</a>
+                    <a class="dropdown-toggle" data-toggle="dropdown">Products</a>
                     <ul class="dropdown-menu">
                         <li><a href="balloons.html">Balloons & Decorations</a></li>
                         <li><a href="#">Cups & Utensils</a></li>
@@ -83,18 +59,21 @@
         </div>
     </nav>
     <!--end navigation-->
-
-    <!--banner image-->
-    <div class="hero-image" style="background-image: url('../img/jumper.png');">
-        <div class="hero-text">
-            <h1>Balloons & Decorations<h1>
+    <div class="cart-container">
+        <div class="row">
+            <div class="col-6 col-sm-6">
+                <img class="img-responsive" src="../img/placeholder.png" style="width:400px;height:400px;">
+            </div>
+            <div class="col-6 col-sm-6">
+                <h1>Product Name</h1>
+                <br>
+                <p>Price</p>
+                <p>Product description.</p>
+                <br>
+                <a href="../cart.html"><button>Add to Cart</button></a>
+            </div>
         </div>
     </div>
-    <!--end banner image-->
-
-    <!--section that json data is posted to-->
-    <section style="padding-bottom: 1650px;">
-    </section>
 
     <!--footer -->
     <div class="footer">
