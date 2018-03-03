@@ -1,0 +1,250 @@
+{
+   "cups": [
+       {
+           "name": "Chafer 4 qt, Glass Lid",
+           "price": "$14.99",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "Chafer 6 qt. Round Roll Top",
+           "price": "$14.99",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "Chafer 8 qt. SS Removable Lid",
+           "price": "$14.99",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "Chafer 8 qt. SS Roll Top",
+           "price": "$19.99",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "Chafer 8 qt. SS with Clear Roll Top",
+           "price": "$19.99",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "Glass Beer/Mixing 16 oz.",
+           "price": "$0.65",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "Glass Champagne",
+           "price": "$0.65",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "Glass Dessert Bowl",
+           "price": "$0.65",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "Glass Frozen Cocktail 13.5 oz.",
+           "price": "$0.65",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "Glass High Ball / Tall 11.5oz.",
+           "price": "$0.65",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "Glass Margarita 10 oz",
+           "price": "$0.65",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "Glass Martini 8 oz.",
+           "price": "$0.65",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "Glass Mason Jar 16 oz.",
+           "price": "$0.65",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "Glass Red Wine 13 oz.",
+           "price": "$0.65",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "Glass Stemless 16 oz.",
+           "price": "$0.65",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "Glass Water 16 oz.",
+           "price": "$0.65",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "Glass White Wine 13 oz.",
+           "price": "$0.65",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "Glass Wine Tasting 6.5 oz.",
+           "price": "$0.65",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "SS Diner Fork",
+           "price": "$0.25",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "SS Diner Knife",
+           "price": "$0.25",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "SS Dinner Spoon",
+           "price": "$0.25",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "SS Salad Fork",
+           "price": "$0.25",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "SS Steak Knife",
+           "price": "$0.65",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "SS Tea/Desert Spoon",
+           "price": "$0.25",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "White Round 11in Dinner Plate",
+           "price": "$0.65",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "White Round 13in Charger",
+           "price": "$1.30",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "White Round 6in Dessert / Appetizer Plate",
+           "price": "$0.65",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "White Round 8.5in Salad Plate",
+           "price": "$0.65",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "White Round Cup and Saucer",
+           "price": "$1.30",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "White Round Embossed 11in Dinner Plate",
+           "price": "$0.85",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "White Round Embossed 6in Appetizer Plate",
+           "price": "$0.85",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "White Round Embossed 7in Dessert Plate",
+           "price": "$0.85",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "White Round Embossed 8.5in Salad Plate",
+           "price": "$0.85",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "White Round Embossed Cup and Saucer",
+           "price": "$1.70",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "White Round Pasta Bowl",
+           "price": "$0.85",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "White round Soup 16 oz. Bowl",
+           "price": "$0.65",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "White Square 11in Dinner Plate",
+           "price": "$0.65",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "White Square 6in Appetizer/Desert Plate",
+           "price": "$0.65",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "White Square 6in Soup Bowl",
+           "price": "$0.65",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "White Square 8.5in Salad Plate",
+           "price": "$0.65",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       },
+       {
+           "name": "White Square Cup and Saucer",
+           "price": "$1.30",
+           "picture": "../img/helium_balloons.jpg",
+           "description": "fill in later"
+       }
+   ]
+}

@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
 
-    <title>Balloons</title>
+    <title>Outdoor</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -25,8 +25,8 @@
     <!--script function to render json data to html page-->
     <script>
     $(function() {
-        $.getJSON('balloons.json', function(data) {
-            $.each(data.balloons, function(i, key) {
+        $.getJSON('cup.json', function(data) {
+            $.each(data.cups, function(i, key) {
                 var htmlText = '';
 
                 htmlText += '<div class="col-6 col-sm-6">';
@@ -87,7 +87,7 @@
     <!--banner image-->
     <div class="hero-image" style="background-image: url('../img/jumper.png');">
         <div class="hero-text">
-            <h1>Balloons & Decorations<h1>
+            <h1>Outdoor<h1>
         </div>
     </div>
     <!--end banner image-->
