@@ -9,22 +9,27 @@ body{
   font-size:16px;
 }
 h1{
-  font-size: 36px;
+  font-size: 5vmin;
+}
+h2{
+  font-size: 3.75vmin;
+}
+p{
+  font-size: 2.75vmin;
 }
 
 /* navbar styling */
-
 .navbar-brand {
-  font-size: 24px;
+  font-size: 3.75vmin;
 }
 .dropdown-menu {
-  font-size: 16px;
+  font-size: 2.75vmin;
 }
 .dropdown {
-  font-size: 16px;
+  font-size: 2.75vmin;
 }
 .menu {
-  font-size: 16px;
+  font-size: 2.75vmin;
 }
 .dropdown:hover .dropdown-menu {
   display: block;
@@ -63,9 +68,7 @@ h1{
 }
 
 .img-cont{
-  width: 100px;
-  height: 100px;
-  background-size: contain;
+  max-width: 60%;
 }
 
 /* footer styling */
@@ -132,7 +135,8 @@ h1{
 /* used to display the packages */
 section {
   padding-left: 50px;
-  padding-top: 75px;
+  padding-right: 50px;
+  padding-top: 50px;
   /* padding so the bottom of the div isn't cut off by the footer */
   padding-bottom: 2700px;
 }
@@ -200,3 +204,12 @@ section {
 .cart-container button:hover {
   background-color: #5B5D62;
 }
+
+/*-------------------- mobile styling --------------------*/
+
+@media screen and (max-width: 768px) {
+    
+/*-------------------- index.html styling --------------------*/
+    
+}
+
