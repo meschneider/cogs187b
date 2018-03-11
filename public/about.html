@@ -3,12 +3,16 @@
 
   <head>
 
-    <meta charset="utf-8">
-
     <title>About</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!--icon-->
     <link rel="icon" type="image/png" href="img/logo_transparent.png">
@@ -19,12 +23,14 @@
     <!--CSS file-->
     <link href="css/index.css" rel="stylesheet">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+
   </head>
 
   <body>
 
     <!--top navigation-->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="50">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="index.html">Peninsula Party</a>
@@ -46,13 +52,9 @@
                 <li class="menu active"><a href="about.html">About</a></li>
                 <li class="menu"><a href="contact.html">Contact</a></li>
             </ul>
-            <form class="navbar-form navbar-right" action="/action_page.php">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-              </div>
-              <button type="submit" class="btn btn-default"><img src="img/search-icon.png" alt="shopping cart" style="width:16px;height:16px;"></button>
+            <div class="navbar-right">
               <a href="cart.html"><img src="img/shopping-cart.png" alt="shopping cart" style="width:32px;height:32px;"></a>
-            </form>
+            </div>
         </div>
     </nav>
     <!--end navigation-->
@@ -116,7 +118,7 @@ ask for what's fair, most times less but never more.
 
     <!--footer -->
     <div class="footer">
-        <p>© 2018 Peninsula Party Rentals. All rights reserved.</p>
+        <h6>© 2018 Peninsula Party Rentals. All rights reserved.</h6>
     </div>
     <!--end footer-->
 
