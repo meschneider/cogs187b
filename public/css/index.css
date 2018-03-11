@@ -57,6 +57,9 @@ p{
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
+.affix a:hover{
+  background-color: #9A75C2 !important;
+}
 .dropdown-menu > li > a:hover{
   background-color: #6F459C;
 }
@@ -93,7 +96,7 @@ p{
   -webkit-border-radius: 5px;
 }
 .hero-text button:hover {
-  background-color: #5B5D62;
+  background-color: #9A75C2;
 }
 
 .img-cont{
