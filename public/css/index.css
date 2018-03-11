@@ -98,7 +98,6 @@ p{
 .hero-text button:hover {
   background-color: #9A75C2;
 }
-
 .img-cont{
   max-width: 60%;
 }
@@ -119,7 +118,8 @@ p{
 
 /* category styling */
 .item-cat{
-  padding-top: 25px;
+  top: -100px;
+  position: relative;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom:100px;
@@ -146,20 +146,6 @@ p{
 .img__wrap:hover{
   opacity: 0.5;
   visibility: visible;
-}
-.transbox {
-  margin-left:300px;
-  margin-right:300px;
-  height: 45px;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-}
-.transbox h1 {
-  font-weight: bold;
-  color: #ffffff;
 }
 
 /*------------------ packages.html styling ------------------*/
@@ -243,5 +229,4 @@ section {
     
 }
 
-
-
+ 
