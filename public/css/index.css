@@ -10,6 +10,9 @@ h1{
 h2{
   font-size: 3.75vmin;
 }
+h3{
+  font-size: 3.25vmin;
+}
 h6{
   font-size: 2vmin;
 }
@@ -98,9 +101,6 @@ p{
 .hero-text button:hover {
   background-color: #9A75C2;
 }
-.img-cont{
-  max-width: 60%;
-}
 
 /*--------------------- footer styling ---------------------*/
 .footer {
@@ -120,32 +120,18 @@ p{
 .item-cat{
   top: -100px;
   position: relative;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom:100px;
 }
 .category-header{
   color: #8558B5;
 }
-.img-cap{
-  visibility: hidden;
-  color:black;
-  text-align: center;
-  position: absolute;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border: 5px solid white;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .img__wrap:hover{
   opacity: 0.5;
-  visibility: visible;
+}
+.img-cont{
+  max-width: 50%;
 }
 
 /*------------------ packages.html styling ------------------*/
@@ -158,8 +144,14 @@ section {
   /* padding so the bottom of the div isn't cut off by the footer */
   padding-bottom: 2700px;
 }
-.top-buffer { 
+.packages { 
   margin-top:20px;
+}
+.packages h1{
+  color:#8558B5;
+}
+.packages img{
+  width:85%;
 }
 
 /*------------------- contact.html styling -------------------*/
@@ -173,10 +165,12 @@ section {
   margin: 0 auto;
 }
 .contact-container button{
+  text-align: center;
   color: white;
-  background-color: #808080;
-  padding-left:15px;
-  padding-right:15px;
+}
+.contact-container button:hover {
+  color:white;
+  background-color: #9A75C2;
 }
 .map-responsive{
   overflow:hidden;
@@ -238,14 +232,37 @@ section {
 /*-------------------- mobile styling --------------------*/
 
 @media screen and (max-width: 768px) {
-
+  h1{
+    font-size: 6vmin;
+  }
+  h2{
+    font-size: 4.75vmin;
+  }
+  h3{
+    font-size: 4.75vmin;
+  }
+  h6{
+    font-size: 2.5vmin;
+  }
   p{
-  font-size: 3.25vmin;
-}
+    font-size: 4vmin;
+  }
+/*-------------------- packages.html styling --------------------*/
+  .packages img{
+    width:100%;
+  }
+  .packages h1{
+    font-size: 6vmin;
+  }
+  section {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    /* padding so the bottom of the div isn't cut off by the footer */
+    padding-bottom: 2700px;
+  }
     
 /*-------------------- index.html styling --------------------*/
-    
-
 }
 
  
