@@ -198,8 +198,12 @@ section {
 /*-------------------- about.html styling --------------------*/
 .about-company{
   padding-top: 100px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.about-company img{
+  width:85%;
+  height:85%;
 }
 .about-contact{
   padding-top: 50px;
