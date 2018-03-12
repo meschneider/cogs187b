@@ -18,21 +18,22 @@ body{
   font-family: "BrixSansRegular", sans-serif !important;
   height: 100%;
   overflow: auto;
-}
-h1{
-  font-size: 4vmin;
-}
-h2{
-  font-size: 3.75vmin;
-}
-h3{
   font-size: 3vmin;
 }
+h1{
+  font-size: 5vmin;
+}
+h2{
+  font-size: 4.75vmin;
+}
+h3{
+  font-size: 3.75vmin;
+}
 h6{
-  font-size: 2vmin;
+  font-size: 2.25vmin;
 }
 p{
-  font-size: 2.25vmin;
+  font-size: 3vmin;
 }
 
 /*--------------------- custom botton styling ------------------*/
@@ -51,17 +52,17 @@ p{
 
 /*--------------------- navbar styling ---------------------*/
 .navbar-brand {
-  font-size: 3.75vmin;
+  font-size: 4vmin;
 }
 .dropdown-menu {
-  font-size: 2.25vmin;
+  font-size: 2.5vmin;
   background-color: #8558B5;
 }
 .dropdown {
-  font-size: 2.25vmin;
+  font-size: 3vmin;
 }
 .menu {
-  font-size: 2.25vmin;
+  font-size: 3vmin;
 }
 .dropdown:hover .dropdown-menu {
   display: block;
@@ -114,6 +115,7 @@ p{
   color: white;
 }
 .hero-text button {
+  font-size: 2.75vmin;
   border: none;
   outline: 0;
   display: inline-block;
@@ -145,11 +147,10 @@ p{
 
 /*------------------- index.html styling -------------------*/
 .item-cat{
-  top: -100px;
+  top: -125px;
   position: relative;
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom:100px;
 }
 .category-header{
   color: #8558B5;
@@ -161,11 +162,11 @@ p{
   max-width: 30%;
 }
 .about-us{
-  top: -150px;
+  top:-75px;
   position: relative;
   padding-bottom:100px;
 }
-.about-us h2{
+.about-us h3{
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -181,7 +182,7 @@ section {
   padding-bottom: 3200px;
 }
 .packages {
-  margin-top:20px;
+  margin-top:10px;
 }
 .packages h1{
   color:#8558B5;
