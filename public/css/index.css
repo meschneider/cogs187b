@@ -23,19 +23,19 @@ body{
   font-size:16px;
 }
 h1{
-  font-size: 5vmin;
+  font-size: 4vmin;
 }
 h2{
   font-size: 3.75vmin;
 }
 h3{
-  font-size: 3.25vmin;
+  font-size: 3vmin;
 }
 h6{
   font-size: 2vmin;
 }
 p{
-  font-size: 2.5vmin;
+  font-size: 2.25vmin;
 }
 
 /*--------------------- custom botton styling ------------------*/
@@ -57,14 +57,14 @@ p{
   font-size: 3.75vmin;
 }
 .dropdown-menu {
-  font-size: 2.75vmin;
+  font-size: 2.25vmin;
   background-color: #8558B5;
 }
 .dropdown {
-  font-size: 2.75vmin;
+  font-size: 2.25vmin;
 }
 .menu {
-  font-size: 2.75vmin;
+  font-size: 2.25vmin;
 }
 .dropdown:hover .dropdown-menu {
   display: block;
