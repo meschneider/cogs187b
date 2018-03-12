@@ -36,7 +36,7 @@ h6{
   font-size: 2.25vmin;
 }
 p{
-  font-size: 3vmin;
+  font-size: 2.75vmin;
 }
 
 /*--------------------- custom botton styling ------------------*/
@@ -126,6 +126,16 @@ p{
   text-align: center;
   color: white;
 }
+.hero-text h1{
+  background: rgba(127,127,127,0.5);
+  border-radius: 15px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom:10px;
+  margin-right: 28%;
+  margin-left:28%;
+}
 .hero-text button {
   font-size: 2.75vmin;
   border: none;
@@ -154,12 +164,11 @@ p{
   background-color: black;
   color: white;
   text-align: center;
-  padding-top: 3px;
 }
 
 /*------------------- index.html styling -------------------*/
 .item-cat{
-  top: -125px;
+  top: -150px;
   position: relative;
   padding-left: 5%;
   padding-right: 5%;
@@ -174,7 +183,7 @@ p{
   max-width: 30%;
 }
 .about-us{
-  top:-75px;
+  top:-100px;
   position: relative;
   padding-bottom:100px;
 }
@@ -399,6 +408,8 @@ section {
   .hero-text h1{
     padding-left: 5%;
     padding-right: 5%;
+    margin-right: 4.5%;
+    margin-left:4.5%;
     font-size: 7vmin;
   }
   .hero-text button {
