@@ -8,19 +8,16 @@
     font-family: BrixSansMedium;
     src: url(BrixSansRegular.otf);
 }
-
 div {
     font-family: BrixSansRegular;
     font-family: BrixSansMedium;
 }
-
 
 /*--------------------- general styling ---------------------*/
 body{
   font-family: "BrixSansRegular", sans-serif !important;
   height: 100%;
   overflow: auto;
-  font-size:16px;
 }
 h1{
   font-size: 4vmin;
@@ -162,6 +159,15 @@ p{
 }
 .img-cont{
   max-width: 30%;
+}
+.about-us{
+  top: -150px;
+  position: relative;
+  padding-bottom:100px;
+}
+.about-us h2{
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /*------------------ packages.html styling ------------------*/
