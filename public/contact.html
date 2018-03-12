@@ -24,39 +24,92 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
 
+    <!--navbar slideout on mobile-->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "200px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <!--navbar product drop down on mobile-->
+    <script>
+        function productDrop() {
+            var x = document.getElementById("product-drop");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }   
+    </script>
+
   </head>
 
   <body>
 
-    <!--top navigation-->
-    <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="50">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">Peninsula Party</a>
+    <!--desktop navigation-->
+    <div class="desktop-navbar">
+        <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="50">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Peninsula Party</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="products/balloons.html">Balloons & Decorations</a></li>
+                            <li><a href="products/cups&utensils.html">Cups & Utensils</a></li>
+                            <li><a href="products/games.html">Games</a></li>
+                            <li><a href="products/jumpers.html">Jumpers</a></li>
+                            <li><a href="products/machines&accessories.html">Machines & Accessories</a></li>
+                            <li><a href="products/outdoor.html">Outdoor</a></li>
+                            <li><a href="products/tables_chairs_accessories.html">Tables, Chairs, & Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="packages.html">Packages</a></li>
+                    <li class="menu"><a href="about.html">About</a></li>
+                    <li class="menu"><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="navbar-right">
+                    <a href="cart.html"><img src="img/shopping-cart.png" alt="shopping cart" style="width:32px;height:32px;"></a>
+                </div>
             </div>
-            <ul class="nav navbar-nav">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown">Products</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="products/balloons.html">Balloons & Decorations</a></li>
-                        <li><a href="products/cups&utensils.html">Cups & Utensils</a></li>
-                        <li><a href="products/games.html">Games</a></li>
-                        <li><a href="products/jumpers.html">Jumpers</a></li>
-                        <li><a href="products/machines&accessories.html">Machines & Accessories</a></li>
-                        <li><a href="products/outdoor.html">Outdoor</a></li>
-                        <li><a href="products/tables_chairs_accessories.html">Tables, Chairs, & Accessories</a></li>
-                    </ul>
-                </li>
-                <li class="menu"><a href="packages.html">Packages</a></li>
-                <li class="menu"><a href="about.html">About</a></li>
-                <li class="menu active"><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="navbar-right">
-              <a href="cart.html"><img src="img/shopping-cart.png" alt="shopping cart" style="width:32px;height:32px;"></a>
+        </nav>
+    </div>
+    <!--end desktop navigation-->
+
+    <!--mobile navigation-->
+    <div class="mobile-navbar">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Peninsula Party</a>
+                    <span onclick="openNav()">&#9776;</span>
+                </div>
             </div>
+        </nav>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br>
+        <a onclick="productDrop()">Products<b class = "caret"></b></a>
+        <div class="product-drop" id="product-drop" style="display:none;">
+            <a href="products/balloons.html">Balloons & Decorations</a>
+            <a href="products/cups&utensils.html">Cups & Utensils</a>
+            <a href="products/games.html">Games</a>
+            <a href="products/jumpers.html">Jumpers</a>
+            <a href="products/machines&accessories.html">Machines & Accessories</a>
+            <a href="products/outdoor.html">Outdoor</a>
+            <a href="products/tables_chairs_accessories.html">Tables, Chairs, & Accessories</a>
         </div>
-    </nav>
-    <!--end navigation-->
+        <a href="packages.html">Packages</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <!--end mobile navigation-->
 
     <div class="contact-title">
         <h1>Contact Us</h1>

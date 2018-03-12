@@ -3,7 +3,6 @@
     font-family: BrixSansRegular;
     src: url(BrixSansRegular.otf);
 }
-
 @font-face {
     font-family: BrixSansMedium;
     src: url(BrixSansRegular.otf);
@@ -55,6 +54,15 @@ p{
 }
 
 /*--------------------- navbar styling ---------------------*/
+.desktop-navbar{
+  display:block;
+}
+.mobile-navbar{
+  display:none;
+}
+.sidenav{
+  display:none;
+}
 .navbar-brand {
   font-size: 4vmin;
 }
@@ -269,24 +277,26 @@ section {
 /*-------------------- mobile styling --------------------*/
 
 @media screen and (max-width: 768px) {
+
+/*--------------------- general styling ---------------------*/
   h1{
     font-size: 6vmin;
   }
   h2{
-    font-size: 4.75vmin;
+    font-size: 5.5vmin;
   }
   h3{
-    font-size: 4.75vmin;
+    font-size: 5vmin;
   }
   h4{
     font-size: 4.5vmin;
     font-weight: bold;
   }
   h6{
-    font-size: 2.5vmin;
+    font-size: 3vmin;
   }
   p{
-    font-size: 4vmin;
+    font-size: 4.25vmin;
   }
   .cus-btn button{
     text-align: center;
@@ -296,6 +306,79 @@ section {
     padding-left: 15px;
     padding-right: 15px;
     width:100%;
+  }
+
+  /*--------------------- navbar styling ---------------------*/
+  .navbar-brand {
+    font-size: 5vmin;
+  }
+  .desktop-navbar{
+    display:none;
+  }
+  .mobile-navbar{
+    display:block;
+  }
+  .sidenav{
+    display:block;
+  }
+  .navbar{
+    background-color: #8558B5;
+    border: none;
+  }
+  .mobile-navbar span{
+    float:right;
+    cursor:pointer;
+    font-size: 30px;
+    color:white;
+    padding-right:15px;
+    padding-top: 5px;
+    padding-bottom:5px;
+  }
+  .sidenav {
+    z-index:9999;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #8558B5;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 25px;
+  }
+  .sidenav a {
+    z-index:9999;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 5vmin;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .dropdown-menu a{
+    color:white !important;
+    font-size: 4.5vmin;
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-menu li{
+    position: relative;
+    display: inline-block;
+  }
+  .sidenav .product-drop a{
+    font-size: 4vmin;
+    padding-left: 45px;
+  }
+/*-------------------- footer styling --------------------*/
+  .footer {
+    padding-top: 0px;
   }
 /*-------------------- packages.html styling --------------------*/
   .packages img{
@@ -317,6 +400,9 @@ section {
     padding-left: 5%;
     padding-right: 5%;
     font-size: 7vmin;
+  }
+  .hero-text button {
+    font-size: 4.5vmin;
   }
 
 /*-------------------- about.html styling --------------------*/
