@@ -29,6 +29,10 @@ h2{
 h3{
   font-size: 3.75vmin;
 }
+h4{
+  font-size: 3.5vmin;
+  font-weight: bold;
+}
 h6{
   font-size: 2.25vmin;
 }
@@ -229,9 +233,9 @@ section {
   height:85%;
 }
 .about-contact{
-  padding-top: 50px;
-  padding-left:50px;
-  padding-right:50px;
+  padding-top: 30px;
+  padding-left:5%;
+  padding-right:5%;
   /* padding so the bottom of the div isn't cut off by the footer */
   padding-bottom: 100px;
 }
@@ -274,6 +278,10 @@ section {
   h3{
     font-size: 4.75vmin;
   }
+  h4{
+    font-size: 4.5vmin;
+    font-weight: bold;
+  }
   h6{
     font-size: 2.5vmin;
   }
@@ -305,10 +313,18 @@ section {
   }
 
 /*-------------------- index.html styling --------------------*/
-
   .hero-text h1{
     padding-left: 5%;
     padding-right: 5%;
     font-size: 7vmin;
+  }
+
+/*-------------------- about.html styling --------------------*/
+  .about-company .ethics{
+    text-align: center;
+  }
+  .about-pic img{
+    display: block;
+    margin: 0 auto;
   }
 }
