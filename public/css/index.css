@@ -1,3 +1,4 @@
+
 /*--------------------- general styling ---------------------*/
 body{
   font-family: "Didact Gothic", sans-serif !important;
@@ -209,7 +210,6 @@ section {
 }
 
 /*-------------------- cart.html styling --------------------*/
-
 .cart-container{
   padding-top: 100px;
   padding-left:50px;

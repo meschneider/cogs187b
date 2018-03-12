@@ -32,13 +32,13 @@
             $.each(data.balloons, function(i, key) {
                 var htmlText = '';
 
-                htmlText += '<div class="col-6 col-sm-6">';
-                htmlText += '<div class="row top-buffer">';
-                htmlText += '<font color="#8558B5" size="+2">' + key.name + '</font>';
-                htmlText += '<img class="img-responsive" src="' + key.picture + '">';
-                htmlText += '<p> Price: ' + key.price + '</p>';
+                htmlText += '<div class="col-md-6 col-sm-12">';
+                htmlText += '<div class="row packages">';
+                htmlText += '<h1>' + key.name + '</h1><br>';
+                htmlText += '<img src="' + key.picture + '">';
+                htmlText += '<br><br><p> Price: ' + key.price + '</p>';
                 htmlText += '<p> ' + key.description + '</p>';
-                htmlText += '<a href="productpage.html"><button class="btn btn-default" type="submit" style=" color:white; background-color: #8558B5;">View More Details</button><a>';
+                htmlText += '<a href="products/productpage.html"><div class="cus-btn"><button class="btn btn-default" type="submit">View More Details</button></div></a>';
                 htmlText += '</div>';
                 htmlText += '</div>';
 
@@ -91,9 +91,11 @@
     </div>
     <!--end banner image-->
 
-    <!--section that json data is posted to-->
-    <section style="padding-bottom: 1650px;">
-    </section>
+    <div class="balloon-spacing">
+        <!--section that json data is posted to-->
+        <section>
+        </section>
+    </div>
 
     <!--footer -->
     <div class="footer">
