@@ -23,6 +23,15 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
 
+    <!--non-transparent navbar for product pages-->
+    <style>
+        .navbar{
+            background-color: #8558B5 !important;
+        }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+
     <!--navbar slideout on mobile-->
     <script>
         function openNav() {
@@ -54,19 +63,23 @@
 
                 htmlText += '<div class="col-md-6 col-sm-12">';
                 htmlText += '<div class="row packages">';
-                htmlText += '<h1>' + data.packages[id].name + '</h1><br>';
                 htmlText += '<img src="' + data.packages[id].picture + '">';
+                htmlText += '</div>';
+                htmlText += '</div>';
+                htmlText += '<div class="col-md-6 col-sm-12">';
+                htmlText += '<div class="row packages">';
+                htmlText += '<h1>' + data.packages[id].name + '</h1>';
                 htmlText += '<h3> ' + data.packages[id].packagename + '</h3>';
                 htmlText += '<p> Price: ' + data.packages[id].price + '</p>';
                 htmlText += '<p> ' + data.packages[id].description + '</p>';
-                htmlText += '<a href="products/productpage.html?packageID=' + data.packages[id].packageID + '"><div class="cus-btn"><button class="btn btn-default" type="submit">Add to Cart</button></div></a>';
+                htmlText += '<p> ' + data.packages[id].details + '</p><br>';
+                htmlText += '<a href="products/productpage.html?packageID=' + data.packages[id].packageID + '"><div class="cus-btn"><button class="btn btn-default" type="submit">Rent</button></div></a>';
                 htmlText += '</div>';
                 htmlText += '</div>';
 
                 $('section').append(htmlText);
             });
         });
-    //});
     </script>
     <!--end script function-->
 
@@ -135,8 +148,7 @@
     </div>
     <!--end mobile navigation-->
 
-    <!--section that json data is posted to-->
-    <section>
+    <section style="padding-top:60px; padding-bottom:0px;">
     </section>
 
     <!--footer -->

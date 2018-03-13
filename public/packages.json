@@ -5,7 +5,8 @@
            "price": "$129.00",
            "picture": "img/package1.png",
            "packagename": "Basic Party Package",
-           "description": "This package includes the basic essentials for your backyard party.",
+           "description": "This package has the basic essentials for your backyard party.",
+           "details": "Includes: 1 13'X13' jumper, 3 6' children's tables, 24 children chairs, and 12 helium balloons.",
            "packageID": 0
        },
        {
@@ -14,6 +15,7 @@
            "picture": "img/package2.png",
            "packagename": "Cotton Candy Package",
            "description": "This package meets all your cotton candy needs and includes a basic jumper.",
+           "details": "Includes: Includes: 1 13'X13' jumper and 1 cotton candy machine with 100 servings.",
            "packageID": 1
        },
        {
@@ -22,6 +24,7 @@
            "picture": "img/package3.png",
            "packagename": "Popcorn Party Package",
            "description": "This package meets all your popcorn needs and includes a basic jumper.",
+           "details": "Includes: 1 13'X13' jumper and 1 popcorn machine with 100 servings.",
            "packageID": 2
        },
        {
@@ -30,6 +33,7 @@
            "picture": "img/package4.png",
            "packagename": "Snowcone Package",
            "description": "This package meets all your snowcone needs and includes a basic jumper.",
+           "details": "Includes: 1 13' x 13' jumper, 1 snow cone machine, 3 syrup flavors, 100 spoon straws, and 100 snow cone cones. PLEASE NOTE: ice is not included.",
            "packageID": 3
            },
        {
@@ -38,6 +42,7 @@
            "picture": "img/package5.png",
            "packagename": "Margarita Memories",
            "description": "Enjoy 2 different types of margarita flavors.",
+           "details": "Includes: 2 sigle bowl margarita machines, 2 frozen margarita flavors, 100 9oz. tumblers, and 1 margarita salt rimmer.",
            "packageID": 4
            },
        {
@@ -46,6 +51,7 @@
            "picture": "img/package6.png",
            "packagename": "Cotton Candy Dreams",
            "description": "A guaranteed fun party with cotton candy, a jumper, and essentials provided.",
+           "details": "Includes: 1 13'X13' jumper, 1 cotton candy machine with 100 servings, 3 6' children's tables, 24 children's chairs, and 12 helium balloons.",
            "packageID": 5
             },
        {
@@ -54,6 +60,7 @@
            "picture": "img/package7.png",
            "packagename": "Balloon Party 1",
            "description": "Your basic balloon supplies!",
+           "details": "Includes: 1 55cf helium tank, 75 balloons, 1 balloon ribbon roll, and 1 helium tilt adaptor. PLEASE NOTE:",
            "packageID": 6
             },
        {
@@ -62,6 +69,7 @@
            "picture": "img/package8.png",
            "packagename": "Balloon Party 2",
            "description": "Your basic balloon supplies!",
+           "details": "Includes: 1 helium tank 110CF., 200 latex balloons 11', 1 ribbon roll 350yd., and 1 tilt helium adaptor. PLEASE NOTE:",
            "packageID": 7
             },
        {
@@ -70,6 +78,7 @@
            "picture": "img/package9.png",
            "packagename": "Basic Party Package 2",
            "description": "This package includes the basic essentials for your backyard party.",
+           "details": "Includes: one 4 in 1 combo, 3 6' tables, 24 white samsonite chairs, and 12 helium balloons.",
            "packageID": 8
           }
    ]
