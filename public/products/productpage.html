@@ -3,84 +3,158 @@
 
   <head>
 
-    <meta charset="utf-8">
+    <title>Balloons</title>
 
-    <title>Product Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!--icon-->
-    <link rel="icon" type="image/png" href="../img/logo_transparent.png">
+    <link rel="icon" type="image/png" href="img/logo_transparent.png">
 
     <!--Didact Gothic Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
 
-    <!--CSS file--> 
+    <!--CSS file-->
     <link href="../css/index.css" rel="stylesheet">
 
+    <!--non-transparent navbar for product pages-->
+    <style>
+        .navbar{
+            background-color: #8558B5 !important;
+        }
+    </style>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+
+    <!--navbar slideout on mobile-->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "200px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <!--navbar product drop down on mobile-->
+    <script>
+        function productDrop() {
+            var x = document.getElementById("product-drop");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }   
+    </script>
+
+    <!--script function to render json data to html page-->
+    <script>
+        var id = window.location.href.split('=').pop();
+        window.alert(id);
+        $(function() {
+            $.getJSON('balloons.json', function(data) {
+                var htmlText = '';
+
+                htmlText += '<div class="col-md-6 col-sm-12">';
+                htmlText += '<div class="row packages">';
+                htmlText += '<img src="' + data.balloons[id].picture + '">';
+                htmlText += '</div>';
+                htmlText += '</div>';
+                htmlText += '<div class="col-md-6 col-sm-12">';
+                htmlText += '<div class="row packages">';
+                htmlText += '<h1>' + data.balloons[id].name + '</h1><br>';
+                htmlText += '<p> Price: ' + data.balloons[id].price + '</p>';
+                htmlText += '<p> ' + data.balloons[id].description + '</p><br>';
+                htmlText += '<a href="products/productpage.html?packageID=' + data.balloons[id].balloonID + '"><div class="cus-btn"><button class="btn btn-default" type="submit">Rent</button></div></a>';
+                htmlText += '</div>';
+                htmlText += '</div>';
+
+                $('section').append(htmlText);
+            });
+        });
+    </script>
 
     </head>
 
     <body>
 
-    <!--top navigation-->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="../index.html">Peninsula Party</a>
+ <!--desktop navigation-->
+    <div class="desktop-navbar">
+        <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="50">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../index.html">Peninsula Party</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="balloons.html">Balloons & Decorations</a></li>
+                            <li><a href="cups&utensils.html">Cups & Utensils</a></li>
+                            <li><a href="games.html">Games</a></li>
+                            <li><a href="jumpers.html">Jumpers</a></li>
+                            <li><a href="machines&accessories.html">Machines & Accessories</a></li>
+                            <li><a href="outdoor.html">Outdoor</a></li>
+                            <li><a href="tables_chairs_accessories.html">Tables, Chairs, & Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="../packages.html">Packages</a></li>
+                    <li class="menu"><a href="../about.html">About</a></li>
+                    <li class="menu"><a href="../contact.html">Contact</a></li>
+                </ul>
+                <div class="navbar-right">
+                    <a href="cart.html"><img src="../img/shopping-cart.png" alt="shopping cart" style="width:32px;height:32px;"></a>
+                </div>
             </div>
-            <ul class="nav navbar-nav">
-                <li class="dropdown active">
-                    <a class="dropdown-toggle" data-toggle="dropdown">Products</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="balloons.html">Balloons & Decorations</a></li>
-                        <li><a href="#">Cups & Utensils</a></li>
-                        <li><a href="#">Games</a></li>
-                        <li><a href="#">Jumpers</a></li>
-                        <li><a href="#">Machines & Accessories</a></li>
-                        <li><a href="#">Outdoor</a></li>
-                        <li><a href="#">Tables, Chairs, & Accessories</a></li>
-                    </ul>
-                </li>
-                <li><a href="../packages.html">Packages</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-            </ul>
-            <form class="navbar-form navbar-right" action="/action_page.php">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-              </div>
-              <button type="submit" class="btn btn-default"><img src="../img/search-icon.png" alt="shopping cart" style="width:16px;height:16px;"></button>
-              <a href="../cart.html"><img src="../img/shopping-cart.png" alt="shopping cart" style="width:32px;height:32px;"></a>
-            </form>
-        </div>
-    </nav>
-    <!--end navigation-->
-    <div class="cart-container">
-        <div class="row">
-            <div class="col-6 col-sm-6">
-                <img class="img-responsive" src="../img/placeholder.png" style="width:400px;height:400px;">
-            </div>
-            <div class="col-6 col-sm-6">
-                <h1>Product Name</h1>
-                <br>
-                <p>Price</p>
-                <p>Product description.</p>
-                <br>
-                <a href="../cart.html"><button>Add to Cart</button></a>
-            </div>
-        </div>
+        </nav>
     </div>
+    <!--end desktop navigation-->
+
+    <!--mobile navigation-->
+    <div class="mobile-navbar">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../index.html">Peninsula Party</a>
+                    <span onclick="openNav()">&#9776;</span>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br>
+        <a onclick="productDrop()">Products<b class = "caret"></b></a>
+        <div class="product-drop" id="product-drop" style="display:none;">
+            <a href="balloons.html">Balloons & Decorations</a>
+            <a href="cups&utensils.html">Cups & Utensils</a>
+            <a href="games.html">Games</a>
+            <a href="jumpers.html">Jumpers</a>
+            <a href="machines&accessories.html">Machines & Accessories</a>
+            <a href="outdoor.html">Outdoor</a>
+            <a href="tables_chairs_accessories.html">Tables, Chairs, & Accessories</a>
+        </div>
+        <a href="../packages.html">Packages</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+    </div>
+    <!--end mobile navigation-->
+
+    <section style="padding-top:60px; padding-bottom:0px;">
+    </section>
 
     <!--footer -->
     <div class="footer">
         <h6>© 2018 Peninsula Party Rentals. All rights reserved.</h6>
     </div>
     <!--end of footer -->
-    
+
   </body>
 
 </html>

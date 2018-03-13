@@ -283,6 +283,12 @@ section {
   background-color: #5B5D62;
 }
 
+/*-------------------- product pages styling --------------------*/
+.product-details{
+  padding-top:350px !important;
+  padding-left: 50px;
+}
+
 /*-------------------- mobile styling --------------------*/
 
 @media screen and (max-width: 768px) {

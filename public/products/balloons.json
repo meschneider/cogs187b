@@ -5,60 +5,70 @@
            "price": "$75.00",
            "picture": "../img/ballooncolumn.png",
            "description": "7' high colums with giant balloon on top."
+           "balloonID": 0
        },
        {
            "name": "Balloon Drop, 100 balloons",
            "price": "$125.00",
            "picture": "../img/helium_balloons.jpg",
-           "description": "Includes 100 9in balloons."
+           "description": "Includes 100 9in balloons.",
+           "balloonID": 1
        },
        {
            "name": "Helium balloon Arch 10x10",
            "price": "$200.00",
            "picture": "../img/balloonarch.png",
-           "description": "10' Wide X 10' Tall."
+           "description": "10' Wide X 10' Tall.",
+           "balloonID": 2
        },
        {
            "name": "Helium balloon Arch 10x10 Linked",
            "price": "$85.00",
            "picture": "../img/balloonarch1.jpg",
-           "description": "10' wide x10 tall."
+           "description": "10' wide x10 tall.",
+           "balloonID": 3
        },
        {
            "name": "Helium Balloon Bouquet (10 Per)",
            "price": "$19.99",
            "picture": "../img/balloonboquet.png",
-           "description": "10 Helium balloons with weight."
+           "description": "10 Helium balloons with weight.",
+           "balloonID": 4
        },
        {
            "name": "Helium Balloon Bouquet (12 per)",
            "price": "$22.99",
            "picture": "../img/balloonboquet.png",
-           "description": "12 Helium Balloons with weight."
+           "description": "12 Helium Balloons with weight.",
+           "balloonID": 5
        },
        {
            "name": "Helium Balloon Bouquet (6 per)",
            "price": "$13.99",
            "picture": "../img/helium_balloons.jpg",
-           "description": "6 Helium balloons with weight."
+           "description": "6 Helium balloons with weight.",
+           "balloonID": 6
        },
        {
            "name": "Single Helium Balloon",
            "price": "$1.50",
            "picture": "../img/helium_balloons.jpg",
-           "description": "Choose your colors before ordering."
+           "description": "Choose your colors before ordering.",
+           "balloonID": 7
        },
        {
            "name": "Helium Balloons, Printed by the each.",
            "price": "$1.75",
            "picture": "../img/helium_balloons.jpg",
-           "description": "11in, printed balloons."
+           "description": "11in, printed balloons.",
+           "balloonID": 8
        },
        {
            "name": "Helium Birthday Balloon Bouquet",
            "price": "$23.99",
            "picture": "../img/helium_balloons.jpg",
-           "description": "Includes 6 11in printed helium balloons and 2 mylar 18in balloons."
+           "description": "Includes 6 11in printed helium balloons and 2 mylar 18in balloons.",
+           "balloonID": 9
        }
    ]
 }

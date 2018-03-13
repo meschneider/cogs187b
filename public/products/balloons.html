@@ -60,7 +60,7 @@
                 htmlText += '<img src="' + key.picture + '">';
                 htmlText += '<br><br><p> Price: ' + key.price + '</p>';
                 htmlText += '<p> ' + key.description + '</p>';
-                htmlText += '<a href="products/productpage.html"><div class="cus-btn"><button class="btn btn-default" type="submit">View More Details</button></div></a>';
+                htmlText += '<a href="productpage.html?balloonID=' + key.balloonID + '"><div class="cus-btn"><button class="btn btn-default" type="submit">View More Details</button></div></a>';
                 htmlText += '</div>';
                 htmlText += '</div>';
 
@@ -100,7 +100,7 @@
                     <li class="menu"><a href="../contact.html">Contact</a></li>
                 </ul>
                 <div class="navbar-right">
-                    <a href="cart.html"><img src="img/shopping-cart.png" alt="shopping cart" style="width:32px;height:32px;"></a>
+                    <a href="cart.html"><img src="../img/shopping-cart.png" alt="shopping cart" style="width:32px;height:32px;"></a>
                 </div>
             </div>
         </nav>
