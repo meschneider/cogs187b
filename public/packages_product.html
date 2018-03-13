@@ -11,6 +11,9 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
 
     <!--icon-->
     <link rel="icon" type="image/png" href="img/logo_transparent.png">
@@ -21,7 +24,7 @@
     <!--CSS file-->
     <link href="css/index.css" rel="stylesheet">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script src="hhttps://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/locale/af.js"></script>
 
     <!--non-transparent navbar for product pages-->
     <style>
@@ -73,7 +76,7 @@
                 htmlText += '<p> Price: ' + data.packages[id].price + '</p>';
                 htmlText += '<p> ' + data.packages[id].description + '</p>';
                 htmlText += '<p> ' + data.packages[id].details + '</p><br>';
-                htmlText += '<a href="products/productpage.html?packageID=' + data.packages[id].packageID + '"><div class="cus-btn"><button class="btn btn-default" type="submit">Rent</button></div></a>';
+                htmlText += '<div class="cus-btn"><button class="btn btn-default" type="submit" onclick="showDiv()">Rent</button></div>';
                 htmlText += '</div>';
                 htmlText += '</div>';
 
@@ -82,6 +85,27 @@
         });
     </script>
     <!--end script function-->
+
+    <script>
+        function showDiv() {
+            document.getElementById('schedule').style.display = "block";
+        }
+    </script>
+
+    <script type="text/javascript">
+    $(function () {
+        $('#datetimepicker6').datetimepicker();
+        $('#datetimepicker7').datetimepicker({
+            useCurrent: false //Important! See issue #1075
+        });
+        $("#datetimepicker6").on("dp.change", function (e) {
+            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+        });
+        $("#datetimepicker7").on("dp.change", function (e) {
+            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+        });
+    });
+</script>
 
     </head>
 
@@ -148,8 +172,40 @@
     </div>
     <!--end mobile navigation-->
 
-    <section style="padding-top:60px; padding-bottom:0px;">
+    <section style="padding-top:60px; padding-bottom:10px;">
     </section>
+
+
+    <div class="product-details" id="schedule" style="display:none;">
+        <div class="row">
+            <div class="col-6 col-sm-12">
+                <h3>WELCOME<h3>
+            </div>
+        </div>
+    <div class="container">
+    <div class='col-md-5'>
+        <div class="form-group">
+            <div class='input-group date' id='datetimepicker6'>
+                <input type='text' class="form-control" value="Start: (choose date) (choose time)"/>
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class='col-md-5'>
+        <div class="form-group">
+            <div class='input-group date' id='datetimepicker7'>
+                <input type='text' class="form-control" value="End: (choose date) (choose time)"/>
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
 
     <!--footer -->
     <div class="footer">
