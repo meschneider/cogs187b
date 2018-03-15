@@ -4,8 +4,8 @@
     src: url(BrixSansRegular.otf);
 }
 @font-face {
-    font-family: BrixSansMedium;
-    src: url(BrixSansRegular.otf);
+    font-family: BrixSansRegular;
+    src: url(BrixSansMedium.otf);
 }
 div {
     font-family: BrixSansRegular;
@@ -17,26 +17,26 @@ body{
   font-family: "BrixSansRegular", sans-serif !important;
   height: 100%;
   overflow: auto;
-  font-size: 3vmin;
+  font-size: 2.5vmin;
 }
 h1{
-  font-size: 5vmin;
+  font-size: 4vmin;
 }
 h2{
-  font-size: 4.75vmin;
+  font-size: 3vmin;
 }
 h3{
-  font-size: 3.75vmin;
+  font-size: 2.75vmin;
 }
 h4{
-  font-size: 3.5vmin;
+  font-size: 2.5vmin;
   font-weight: bold;
 }
 h6{
-  font-size: 2.25vmin;
+  font-size: 2vmin;
 }
 p{
-  font-size: 2.75vmin;
+  font-size: 2.25vmin;
 }
 
 /*--------------------- custom botton styling ------------------*/
@@ -44,7 +44,7 @@ p{
   text-align: center;
   color: white;
   background-color: #8558B5;
-  font-size: 2.75vmin;
+  font-size: 2vmin;
   padding-left: 15px;
   padding-right: 15px;
 }
