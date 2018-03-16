@@ -1,7 +1,6 @@
 {
    "packages": [
        {
-           "name": "Package Deal #1",
            "price": "$129.00",
            "picture": "img/package1.png",
            "packagename": "Basic Party Package",
@@ -10,7 +9,6 @@
            "packageID": 0
        },
        {
-           "name": "Package Deal #2",
            "price": "$149.00",
            "picture": "img/package2.png",
            "packagename": "Cotton Candy Package",
@@ -19,7 +17,6 @@
            "packageID": 1
        },
        {
-           "name": "Package Deal #3",
            "price": "$149.00",
            "picture": "img/package3.png",
            "packagename": "Popcorn Party Package",
@@ -28,7 +25,6 @@
            "packageID": 2
        },
        {
-           "name": "Package Deal #4",
            "price": "$149.00",
            "picture": "img/package4.png",
            "packagename": "Snowcone Package",
@@ -37,7 +33,6 @@
            "packageID": 3
            },
        {
-           "name": "Package Deal #5",
            "price": "$189.00",
            "picture": "img/package5.png",
            "packagename": "Margarita Memories",
@@ -46,7 +41,6 @@
            "packageID": 4
            },
        {
-           "name": "Package Deal #6",
            "price": "$199.00",
            "picture": "img/package6.png",
            "packagename": "Cotton Candy Dreams",
@@ -55,7 +49,6 @@
            "packageID": 5
             },
        {
-           "name": "Package Deal #7",
            "price": "$79.00",
            "picture": "img/package7.png",
            "packagename": "Balloon Party 1",
@@ -64,7 +57,6 @@
            "packageID": 6
             },
        {
-           "name": "Package Deal #8",
            "price": "$169.00",
            "picture": "img/package8.png",
            "packagename": "Balloon Party 2",
@@ -73,7 +65,6 @@
            "packageID": 7
             },
        {
-           "name": "Package Deal #9",
            "price": "$215.00",
            "picture": "img/package9.png",
            "packagename": "Basic Party Package 2",

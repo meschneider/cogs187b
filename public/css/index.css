@@ -66,10 +66,6 @@ p{
 .navbar-brand {
   font-size: 4vmin;
 }
-.dropdown-menu {
-  font-size: 2.5vmin;
-  background-color: #8558B5;
-}
 .dropdown {
   font-size: 3vmin;
 }
@@ -158,6 +154,7 @@ p{
 /*--------------------- footer styling ---------------------*/
 .footer {
   position: fixed;
+  z-index:9998;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -283,12 +280,6 @@ section {
   background-color: #5B5D62;
 }
 
-/*-------------------- product pages styling --------------------*/
-.product-details{
-  padding-top:350px !important;
-  padding-left: 50px;
-}
-
 /*-------------------- mobile styling --------------------*/
 
 @media screen and (max-width: 768px) {
@@ -403,8 +394,8 @@ section {
     font-size: 6vmin;
   }
   section {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 15px;
     /* padding so the bottom of the div isn't cut off by the footer */
     padding-bottom: 100px;
