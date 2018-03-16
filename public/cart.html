@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
 
+    <title>Packages</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Peninsula Party</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!--icon-->
     <link rel="icon" type="image/png" href="img/logo_transparent.png">
@@ -18,12 +20,8 @@
 
     <!--CSS file-->
     <link href="css/index.css" rel="stylesheet">
-    <!--non-transparent navbar for product pages-->
-    <style>
-        .navbar{
-            background-color: #8558B5 !important;
-        }
-    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
 
     <!--navbar slideout on mobile-->
     <script>
@@ -50,40 +48,45 @@
     <!--script function to render json data to html page-->
     <script>
     $(function() {
-        $.getJSON('../ajax/cart.json', function(data) {
+        $.getJSON('packages.json', function(data) {
             $.each(data.packages, function(i, key) {
                 var htmlText = '';
-                if(key.file == packages){
-                    htmlText += '<div class="col-md-6 col-sm-12">';
-                    htmlText += '<div class="row packages">';
-                    htmlText += '<h1>' + key.packagename + '</h1>';
-                    htmlText += '<img src="' + key.picture + '">';
-                    htmlText += '<br><br><p> Price: ' + key.price + '</p>';
-                    htmlText += '<p> ' + key.description + '</p>';
-                    htmlText += '<p> ' + key.details + '</p>';
-                    htmlText += '<a href="packages_product.html?packageID=' + key.packageID + '"><div class="cus-btn"><button class="btn btn-default" type="submit">Rent</button></div></a>';
-                    htmlText += '</div>';
-                    htmlText += '</div>';
+                if(key.file == "packages.json"){
+                    console.log("inside of packages");
+                    packages(key.id, key.start, key.end);
                 }
-                if(key.file == balloons){
-                    htmlText += '<div class="col-md-6 col-sm-12">';
-                    htmlText += '<div class="row packages">';
-                    htmlText += '<h1>' + key.packagename + '</h1>';
-                    htmlText += '<img src="' + key.picture + '">';
-                    htmlText += '<br><br><p> Price: ' + key.price + '</p>';
-                    htmlText += '<p> ' + key.description + '</p>';
-                    htmlText += '<p> ' + key.details + '</p>';
-                    htmlText += '<a href="packages_product.html?packageID=' + key.packageID + '"><div class="cus-btn"><button class="btn btn-default" type="submit">Rent</button></div></a>';
-                    htmlText += '</div>';
-                    htmlText += '</div>';
+                else{
+                    balloons();
                 }
-
-                $('section').append(htmlText);
             });
         });
+        function packages(id, start, end) {
+        $.getJSON('packages.json', function(data) {
+                var htmlText = '';
+                htmlText += '<div class="col-md-6 col-sm-12">';
+                htmlText += '<div class="row packages">';
+                htmlText += '<img src="' + data.packages[id].picture + '">';
+                htmlText += '</div>';
+                htmlText += '</div>';
+                htmlText += '<div class="col-md-6 col-sm-12">';
+                htmlText += '<div class="row packages">';
+                htmlText += '<h1> ' + data.packages[id].packagename + '</h1>';
+                htmlText += '<p> Price: ' + data.packages[id].price + '</p>';
+                htmlText += '<p> ' + data.packages[id].description + '</p>';
+                htmlText += '<p> ' + data.packages[id].details + '</p><br>';
+                htmlText += '</div>';
+                htmlText += '</div>';
+                $('section').append(htmlText);
+            });
+        }
+        function balloons(){
+            console.log("meow");
+        }
     });
     </script>
     <!--end script function-->
+
+    </head>
 
   </head>
 
@@ -159,6 +162,9 @@
             <button class="btn btn-default center-block">Browse Our Selection</button>
         </div>
     </div>
+
+    <section>
+    </section>
     
     <!--fixed footer-->
     <div class="footer">
