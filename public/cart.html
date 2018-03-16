@@ -18,6 +18,12 @@
 
     <!--CSS file-->
     <link href="css/index.css" rel="stylesheet">
+    <!--non-transparent navbar for product pages-->
+    <style>
+        .navbar{
+            background-color: #8558B5 !important;
+        }
+    </style>
 
     <!--navbar slideout on mobile-->
     <script>
@@ -41,6 +47,44 @@
         }   
     </script>
 
+    <!--script function to render json data to html page-->
+    <script>
+    $(function() {
+        $.getJSON('../ajax/cart.json', function(data) {
+            $.each(data.packages, function(i, key) {
+                var htmlText = '';
+                if(key.file == packages){
+                    htmlText += '<div class="col-md-6 col-sm-12">';
+                    htmlText += '<div class="row packages">';
+                    htmlText += '<h1>' + key.packagename + '</h1>';
+                    htmlText += '<img src="' + key.picture + '">';
+                    htmlText += '<br><br><p> Price: ' + key.price + '</p>';
+                    htmlText += '<p> ' + key.description + '</p>';
+                    htmlText += '<p> ' + key.details + '</p>';
+                    htmlText += '<a href="packages_product.html?packageID=' + key.packageID + '"><div class="cus-btn"><button class="btn btn-default" type="submit">Rent</button></div></a>';
+                    htmlText += '</div>';
+                    htmlText += '</div>';
+                }
+                if(key.file == balloons){
+                    htmlText += '<div class="col-md-6 col-sm-12">';
+                    htmlText += '<div class="row packages">';
+                    htmlText += '<h1>' + key.packagename + '</h1>';
+                    htmlText += '<img src="' + key.picture + '">';
+                    htmlText += '<br><br><p> Price: ' + key.price + '</p>';
+                    htmlText += '<p> ' + key.description + '</p>';
+                    htmlText += '<p> ' + key.details + '</p>';
+                    htmlText += '<a href="packages_product.html?packageID=' + key.packageID + '"><div class="cus-btn"><button class="btn btn-default" type="submit">Rent</button></div></a>';
+                    htmlText += '</div>';
+                    htmlText += '</div>';
+                }
+
+                $('section').append(htmlText);
+            });
+        });
+    });
+    </script>
+    <!--end script function-->
+
   </head>
 
   <body>
@@ -55,7 +99,7 @@
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown">Products</a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" style="background-color: #8558B5;">
                             <li><a href="products/balloons.html">Balloons & Decorations</a></li>
                             <li><a href="products/cups&utensils.html">Cups & Utensils</a></li>
                             <li><a href="products/games.html">Games</a></li>
