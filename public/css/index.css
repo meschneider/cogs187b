@@ -156,7 +156,11 @@ p{
 .hero-text button:hover {
   background-color: #9A75C2;
 }
-
+/*-- Balloon pages styling--*/
+.hero-text{
+  postion: relative;
+  top: 120px;
+}
 /*--------------------- footer styling ---------------------*/
 .footer {
   position: fixed;
@@ -216,6 +220,21 @@ section {
 }
 .packages a:hover{
   text-decoration: none;
+}
+
+.hero-text h3 {
+  position: relative;
+  bottom: 80px;
+}
+
+.hero-text h1 {
+  border-radius: 15px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom:10px;
+  margin-right: 38%;
+  margin-left:38%;
 }
 
 /*------------------- contact.html styling -------------------*/
@@ -376,7 +395,7 @@ section {
   }
   .dropdown-menu a{
     color:white !important;
-    font-size: 4.5vmin;
+    font-size: 3.5vmin;
     position: relative;
     display: inline-block;
   }
@@ -385,7 +404,7 @@ section {
     display: inline-block;
   }
   .sidenav .product-drop a{
-    font-size: 4vmin;
+    font-size: 5vmin;
     padding-left: 45px;
   }
 /*-------------------- footer styling --------------------*/
