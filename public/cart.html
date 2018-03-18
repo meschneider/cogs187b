@@ -62,12 +62,34 @@
                         if(v.file == "packages.json"){
                             getPackage(v.id, v.start, v.end);
                         }
+                        else{
+                            getBalloon(v.id, v.start, v.end);
+                        }
                     });
                 }
             });
         });
         function getPackage(id, start, end){
             $.getJSON('packages.json', function(data) {
+                var htmlText = '';
+
+                htmlText += '<div class="row">';
+                htmlText += '<div class="col-md-6 col-sm-12">';
+                htmlText += '<img src="' + data.packages[id].picture + '" class="img-responsive">';
+                htmlText += '</div>';
+                htmlText += '<div class="col-md-6 col-sm-12">';
+                htmlText += '<h1> ' + data.packages[id].packagename + '</h1>';
+                htmlText += '<p> Price: ' + data.packages[id].price + '</p>';
+                htmlText += '<p> ' + data.packages[id].details + '</p>';
+                htmlText += '</div>';
+                htmlText += '</div>';
+                htmlText += '<br><br>';
+
+                $('section').append(htmlText);
+            });
+        }
+        function getBalloon(id, start, end){
+            $.getJSON('balloon.json', function(data) {
                 var htmlText = '';
 
                 htmlText += '<div class="row">';
@@ -106,13 +128,13 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown">Products</a>
                         <ul class="dropdown-menu" style="background-color: #8558B5;">
-                            <li><a href="products/balloons.html">Balloons & Decorations</a></li>
-                            <li><a href="products/cups&utensils.html">Cups & Utensils</a></li>
-                            <li><a href="products/games.html">Games</a></li>
-                            <li><a href="products/jumpers.html">Jumpers</a></li>
-                            <li><a href="products/machines&accessories.html">Machines & Accessories</a></li>
-                            <li><a href="products/outdoor.html">Outdoor</a></li>
-                            <li><a href="products/tables_chairs_accessories.html">Tables, Chairs, & Accessories</a></li>
+                            <li><a href="balloons.html">Balloons & Decorations</a></li>
+                            <li><a href="#">Cups & Utensils</a></li>
+                            <li><a href="#">Games</a></li>
+                            <li><a href="#">Jumpers</a></li>
+                            <li><a href="#">Machines & Accessories</a></li>
+                            <li><a href="#">Outdoor</a></li>
+                            <li><a href="#">Tables, Chairs, & Accessories</a></li>
                         </ul>
                     </li>
                     <li class="menu"><a href="packages.html">Packages</a></li>
@@ -142,13 +164,13 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br>
         <a onclick="productDrop()">Products<b class = "caret"></b></a>
         <div class="product-drop" id="product-drop" style="display:none;">
-            <a href="products/balloons.html">Balloons & Decorations</a>
-            <a href="products/cups&utensils.html">Cups & Utensils</a>
-            <a href="products/games.html">Games</a>
-            <a href="products/jumpers.html">Jumpers</a>
-            <a href="products/machines&accessories.html">Machines & Accessories</a>
-            <a href="products/outdoor.html">Outdoor</a>
-            <a href="products/tables_chairs_accessories.html">Tables, Chairs, & Accessories</a>
+            <a href="balloons.html">Balloons & Decorations</a>
+            <a href="#">Cups & Utensils</a>
+            <a href="#">Games</a>
+            <a href="#">Jumpers</a>
+            <a href="#">Machines & Accessories</a>
+            <a href="#">Outdoor</a>
+            <a href="#">Tables, Chairs, & Accessories</a>
         </div>
         <a href="packages.html">Packages</a>
         <a href="about.html">About</a>
