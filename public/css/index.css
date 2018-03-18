@@ -207,7 +207,7 @@ section {
   padding-right: 50px;
   padding-top: 25px;
   /* padding so the bottom of the div isn't cut off by the footer */
-  padding-bottom: 3200px;
+  padding-bottom: 1700px;
 }
 .packages {
   margin-top:10px;
@@ -221,20 +221,18 @@ section {
 .packages a:hover{
   text-decoration: none;
 }
-
 .hero-text h3 {
   position: relative;
   bottom: 80px;
 }
+.row p {
+  text-align: center;
+}
 
-.hero-text h1 {
-  border-radius: 15px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  padding-top: 10px;
-  padding-bottom:10px;
-  margin-right: 38%;
-  margin-left:38%;
+
+/*-------testimonials-----*/
+.col-sm-6 {
+  background-color: #f5f3f3;
 }
 
 /*------------------- contact.html styling -------------------*/
