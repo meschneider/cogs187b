@@ -60,16 +60,16 @@
                 success: function (data) {
                     $.each(data.cart, function(k, v) {
                         if(v.file == "packages.json"){
-                            getPackage(v.id, v.start, v.end);
+                            getPackage(k, v.id, v.start, v.end);
                         }
                         else{
-                            getBalloon(v.id, v.start, v.end);
+                            getBalloon(k, v.id, v.start, v.end);
                         }
                     });
                 }
             });
         });
-        function getPackage(id, start, end){
+        function getPackage(k, id, start, end){
             $.getJSON('packages.json', function(data) {
                 var htmlText = '';
 
@@ -81,7 +81,7 @@
                 htmlText += '<h1> ' + data.packages[id].packagename + '</h1>';
                 htmlText += '<p style="text-align:left;"> Price: ' + data.packages[id].price + '</p>';
                 htmlText += '<p style="text-align:left;"> ' + data.packages[id].details + '</p>';
-                htmlText += '<div class="cus-btn"><button class="btn btn-default" onclick="remove()">Remove</button>';
+                htmlText += '<div class="cus-btn"><button class="btn btn-default" onclick="remove(' + k + ')">Remove</button>';
                 htmlText += '</div>';
                 htmlText += '</div>';
 
@@ -90,7 +90,7 @@
                 $('section').append(htmlText);
             });
         }
-        function getBalloon(id, start, end){
+        function getBalloon(k, id, start, end){
             $.getJSON('balloons.json', function(data) {
                 var htmlText = '';
 
@@ -102,7 +102,7 @@
                 htmlText += '<h1> ' + data.balloons[id].name + '</h1>';
                 htmlText += '<p style="text-align:left;"> Price: ' + data.balloons[id].price + '</p>';
                 htmlText += '<p style="text-align:left;"> ' + data.balloons[id].description + '</p>';
-                htmlText += '<div class="cus-btn"><button class="btn btn-default" onclick="remove()">Remove</button>';
+                htmlText += '<div class="cus-btn"><button class="btn btn-default" onclick="remove(' + k + ')">Remove</button>';
                 htmlText += '</div>';
                 htmlText += '</div>';
                 htmlText += '<br><br>';
@@ -112,9 +112,6 @@
         }
     </script>
     <!--end script function-->
-
-
-    </head>
 
   </head>
 
@@ -191,13 +188,30 @@
     <div class="cus-btn">
         <button class="btn btn-default center-block" style="margin-bottom:50px;font-size: 3vmin;">Browse Our Selection</button>
     </div>
-
     
     <!--fixed footer-->
     <div class="footer">
         <h6>© 2018 Peninsula Party Rentals. All rights reserved.</h6>
     </div>
     <!--end footer-->
+
+    <!--remove item from cart function-->
+    <script>
+        function remove(id){
+            $.ajax({
+                url: "/ajax/removecart?action=post",
+                type: "post",
+                data: {
+                    index: id
+                },
+                success: function (data) {
+                    alert("Your item has been removed from your cart.")
+                    window.location.replace("http://localhost:21023/cart.html");
+                }
+            });
+        }
+    </script>
+    <!--end of function-->
 
   </body>
 
