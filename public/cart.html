@@ -20,6 +20,12 @@
 
     <!--CSS file-->
     <link href="css/index.css" rel="stylesheet">
+    <!--non-transparent navbar for product pages-->
+    <style>
+        .navbar{
+            background-color: #8558B5 !important;
+        }
+    </style>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
 
@@ -47,44 +53,42 @@
 
     <!--script function to render json data to html page-->
     <script>
-    $(function() {
-        $.getJSON('packages.json', function(data) {
-            $.each(data.packages, function(i, key) {
-                var htmlText = '';
-                if(key.file == "packages.json"){
-                    console.log("inside of packages");
-                    packages(key.id, key.start, key.end);
-                }
-                else{
-                    balloons();
+        $(function() {
+            $.ajax({
+                url: "/ajax/getcart?action=get",
+                type: "get",
+                success: function (data) {
+                    $.each(data.cart, function(k, v) {
+                        if(v.file == "packages.json"){
+                            getPackage(v.id, v.start, v.end);
+                        }
+                    });
                 }
             });
         });
-        function packages(id, start, end) {
-        $.getJSON('packages.json', function(data) {
+        function getPackage(id, start, end){
+            $.getJSON('packages.json', function(data) {
                 var htmlText = '';
+
+                htmlText += '<div class="row">';
                 htmlText += '<div class="col-md-6 col-sm-12">';
-                htmlText += '<div class="row packages">';
                 htmlText += '<img src="' + data.packages[id].picture + '">';
                 htmlText += '</div>';
-                htmlText += '</div>';
                 htmlText += '<div class="col-md-6 col-sm-12">';
-                htmlText += '<div class="row packages">';
                 htmlText += '<h1> ' + data.packages[id].packagename + '</h1>';
                 htmlText += '<p> Price: ' + data.packages[id].price + '</p>';
                 htmlText += '<p> ' + data.packages[id].description + '</p>';
                 htmlText += '<p> ' + data.packages[id].details + '</p><br>';
                 htmlText += '</div>';
                 htmlText += '</div>';
+                htmlText += '<br><br>';
+
                 $('section').append(htmlText);
             });
         }
-        function balloons(){
-            console.log("meow");
-        }
-    });
     </script>
     <!--end script function-->
+
 
     </head>
 
@@ -165,6 +169,7 @@
 
     <section>
     </section>
+
     
     <!--fixed footer-->
     <div class="footer">
