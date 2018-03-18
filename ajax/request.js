@@ -11,7 +11,7 @@ module.exports = {
 
         var d = require("./cart.json");
         console.log(req.body);
-        d.push(req.body);
+        d.cart.unshift(req.body);
         fs.writeFile("ajax/cart.json", JSON.stringify(d));
         res.success();
     }

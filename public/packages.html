@@ -52,9 +52,9 @@
             $.each(data.packages, function(i, key) {
                 var htmlText = '';
 
-                htmlText += '<div class="col-md-4 col-sm-12">';
+                htmlText += '<div class="col-md-6 col-sm-12">';
                 htmlText += '<div class="row packages">';
-                htmlText += '<h1>' + key.packagename + '</h1>';
+                htmlText += '<h1>' + key.packagename + '</h1><br>';
                 htmlText += '<img src="' + key.picture + '">';
                 htmlText += '<br><br><p> Price: ' + key.price + '</p>';
                 htmlText += '<p> ' + key.details + '</p>';
@@ -83,7 +83,7 @@
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown">Products</a>
-                        <ul class="dropdown-menu" style="background-color: #8558B5;">
+                        <ul class="dropdown-menu">
                             <li><a href="products/balloons.html">Balloons & Decorations</a></li>
                             <li><a href="products/cups&utensils.html">Cups & Utensils</a></li>
                             <li><a href="products/games.html">Games</a></li>
