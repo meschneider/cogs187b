@@ -89,17 +89,17 @@
             });
         }
         function getBalloon(id, start, end){
-            $.getJSON('balloon.json', function(data) {
+            $.getJSON('balloons.json', function(data) {
                 var htmlText = '';
 
                 htmlText += '<div class="row">';
                 htmlText += '<div class="col-md-6 col-sm-12">';
-                htmlText += '<img src="' + data.packages[id].picture + '" class="img-responsive">';
+                htmlText += '<img src="' + data.balloons[id].picture + '" class="img-responsive">';
                 htmlText += '</div>';
                 htmlText += '<div class="col-md-6 col-sm-12">';
-                htmlText += '<h1> ' + data.packages[id].packagename + '</h1>';
-                htmlText += '<p> Price: ' + data.packages[id].price + '</p>';
-                htmlText += '<p> ' + data.packages[id].details + '</p>';
+                htmlText += '<h1> ' + data.balloons[id].name + '</h1>';
+                htmlText += '<p> Price: ' + data.balloons[id].price + '</p>';
+                htmlText += '<p> ' + data.balloons[id].description + '</p>';
                 htmlText += '</div>';
                 htmlText += '</div>';
                 htmlText += '<br><br>';
