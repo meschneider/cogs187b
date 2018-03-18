@@ -111,7 +111,7 @@ p{
 
 /*--------------------- banner styling ---------------------*/
 .hero-image {
-  height: 400px;
+  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -120,6 +120,8 @@ p{
 }
 .hero-text {
   text-align: center;
+  position: relative;
+  bottom: 100px;
   color: white;
 }
 .hero-text h1{
@@ -131,6 +133,8 @@ p{
   padding-bottom:10px;
   margin-right: 28%;
   margin-left:28%;
+  position: relative;
+  bottom: 80px;
 }
 .hero-text button {
   font-size: 2.75vmin;
@@ -146,11 +150,17 @@ p{
   border-radius: 15px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
+  position: relative;
+  bottom: 80px;
 }
 .hero-text button:hover {
   background-color: #9A75C2;
 }
-
+/*-- Balloon pages styling--*/
+.hero-text{
+  postion: relative;
+  top: 120px;
+}
 /*--------------------- footer styling ---------------------*/
 .footer {
   position: fixed;
@@ -197,7 +207,7 @@ section {
   padding-right: 50px;
   padding-top: 25px;
   /* padding so the bottom of the div isn't cut off by the footer */
-  padding-bottom: 3200px;
+  padding-bottom: 1700px;
 }
 .packages {
   margin-top:10px;
@@ -210,6 +220,19 @@ section {
 }
 .packages a:hover{
   text-decoration: none;
+}
+.hero-text h3 {
+  position: relative;
+  bottom: 80px;
+}
+.row p {
+  text-align: center;
+}
+
+
+/*-------testimonials-----*/
+.col-sm-6 {
+  background-color: #f5f3f3;
 }
 
 /*------------------- contact.html styling -------------------*/
@@ -370,7 +393,7 @@ section {
   }
   .dropdown-menu a{
     color:white !important;
-    font-size: 4.5vmin;
+    font-size: 3.5vmin;
     position: relative;
     display: inline-block;
   }
@@ -379,7 +402,7 @@ section {
     display: inline-block;
   }
   .sidenav .product-drop a{
-    font-size: 4vmin;
+    font-size: 5vmin;
     padding-left: 45px;
   }
 /*-------------------- footer styling --------------------*/

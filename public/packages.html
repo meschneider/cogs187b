@@ -42,7 +42,7 @@
             } else {
                 x.style.display = "none";
             }
-        }   
+        }
     </script>
 
     <!--script function to render json data to html page-->
@@ -52,12 +52,11 @@
             $.each(data.packages, function(i, key) {
                 var htmlText = '';
 
-                htmlText += '<div class="col-md-4 col-sm-12">';
+                htmlText += '<div class="col-md-6 col-sm-12">';
                 htmlText += '<div class="row packages">';
-                htmlText += '<h1>' + key.packagename + '</h1>';
+                htmlText += '<h1>' + key.packagename + '</h1><br>';
                 htmlText += '<img src="' + key.picture + '">';
                 htmlText += '<br><br><p> Price: ' + key.price + '</p>';
-                htmlText += '<p> ' + key.description + '</p>';
                 htmlText += '<p> ' + key.details + '</p>';
                 htmlText += '<a href="packages_product.html?packageID=' + key.packageID + '"><div class="cus-btn"><button class="btn btn-default" type="submit">Rent</button></div></a>';
                 htmlText += '</div>';
@@ -84,7 +83,7 @@
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown">Products</a>
-                        <ul class="dropdown-menu" style="background-color: #8558B5;">
+                        <ul class="dropdown-menu">
                             <li><a href="products/balloons.html">Balloons & Decorations</a></li>
                             <li><a href="products/cups&utensils.html">Cups & Utensils</a></li>
                             <li><a href="products/games.html">Games</a></li>
@@ -136,12 +135,22 @@
     <!--end mobile navigation-->
 
     <!--banner image-->
-    <div class="hero-image" style="background-image: url('img/packagebanner.png');">
+    <div class="hero-image" style="background-image: url('img/popular.jpg');">
+      <div class="hero-text">
+          <h1 class="packages">Packages</h1>
+          <h3> The best deals and products combined.</h3>
+      </div>
     </div>
+
+
     <!--end banner image-->
 
     <!--section that json data is posted to-->
-    <section>
+    <section style="padding-bottom:#px">
+              <div class="row">
+                  <p>Don't see what you need? Call <a href="tel:650-213-8000">650-213-8000</a>
+                    to inquire about a customized package.</p>
+              </div>
     </section>
 
     <!--footer -->
