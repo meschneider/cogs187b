@@ -8,7 +8,7 @@
          "balloonID": 0
      },
      {
-         "name": "Helium Balloons, Printed by the each.",
+         "name": "Helium Balloons, Printed",
          "price": "$1.75",
          "picture": "../img/balloonprinted.jpg",
          "description": "11in, printed balloons.",
@@ -24,7 +24,7 @@
        {
            "name": "Helium Balloon Bouquet (6 per)",
            "price": "$13.99",
-           "picture": "../img/balloonboquet6.png",
+           "picture": "../img/balloonboquet61.png",
            "description": "6 Helium balloons with weight.",
            "balloonID": 3
        },
