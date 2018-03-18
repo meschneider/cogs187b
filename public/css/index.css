@@ -108,6 +108,9 @@ p{
   padding-top:5px;
   padding-right:10px;
 }
+.narbar .dropdown-menu{
+  background-color: #8558B5 !important;
+}
 
 /*--------------------- banner styling ---------------------*/
 .hero-image {
