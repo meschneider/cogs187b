@@ -79,10 +79,12 @@
                 htmlText += '</div>';
                 htmlText += '<div class="col-md-6 col-sm-12">';
                 htmlText += '<h1> ' + data.packages[id].packagename + '</h1>';
-                htmlText += '<p> Price: ' + data.packages[id].price + '</p>';
-                htmlText += '<p> ' + data.packages[id].details + '</p>';
+                htmlText += '<p style="text-align:left;"> Price: ' + data.packages[id].price + '</p>';
+                htmlText += '<p style="text-align:left;"> ' + data.packages[id].details + '</p>';
+                htmlText += '<div class="cus-btn"><button class="btn btn-default" onclick="remove()">Remove</button>';
                 htmlText += '</div>';
                 htmlText += '</div>';
+
                 htmlText += '<br><br>';
 
                 $('section').append(htmlText);
@@ -98,8 +100,9 @@
                 htmlText += '</div>';
                 htmlText += '<div class="col-md-6 col-sm-12">';
                 htmlText += '<h1> ' + data.balloons[id].name + '</h1>';
-                htmlText += '<p> Price: ' + data.balloons[id].price + '</p>';
-                htmlText += '<p> ' + data.balloons[id].description + '</p>';
+                htmlText += '<p style="text-align:left;"> Price: ' + data.balloons[id].price + '</p>';
+                htmlText += '<p style="text-align:left;"> ' + data.balloons[id].description + '</p>';
+                htmlText += '<div class="cus-btn"><button class="btn btn-default" onclick="remove()">Remove</button>';
                 htmlText += '</div>';
                 htmlText += '</div>';
                 htmlText += '<br><br>';
