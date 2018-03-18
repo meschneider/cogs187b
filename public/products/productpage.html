@@ -14,6 +14,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <!-- used for date picker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+
     <!--icon-->
     <link rel="icon" type="image/png" href="img/logo_transparent.png">
 
@@ -31,6 +39,21 @@
     </style>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker6').datetimepicker();
+            $('#datetimepicker7').datetimepicker({
+                useCurrent: false //Important! See issue #1075
+            });
+            $("#datetimepicker6").on("dp.change", function (e) {
+                $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+            });
+            $("#datetimepicker7").on("dp.change", function (e) {
+                $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+            });
+        });
+    </script>
 
     <!--navbar slideout on mobile-->
     <script>
@@ -57,7 +80,6 @@
     <!--script function to render json data to html page-->
     <script>
         var id = window.location.href.split('=').pop();
-        window.alert(id);
         $(function() {
             $.getJSON('balloons.json', function(data) {
                 var htmlText = '';
@@ -72,7 +94,6 @@
                 htmlText += '<h1>' + data.balloons[id].name + '</h1><br>';
                 htmlText += '<p> Price: ' + data.balloons[id].price + '</p>';
                 htmlText += '<p> ' + data.balloons[id].description + '</p><br>';
-                htmlText += '<a href="products/productpage.html?packageID=' + data.balloons[id].balloonID + '"><div class="cus-btn"><button class="btn btn-default" type="submit">Rent</button></div></a>';
                 htmlText += '</div>';
                 htmlText += '</div>';
 
@@ -148,6 +169,27 @@
 
     <section style="padding-top:60px; padding-bottom:0px;">
     </section>
+
+    <div class="container" style="padding-bottom:40px;">
+        <h3>Check Avalibility</h3>
+        <div class="form-group">
+            <div class='input-group date' id='datetimepicker6'>
+                <input type='text' class="form-control" placeholder="Start Date & Time"/>
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class='input-group date' id='datetimepicker7'>
+                <input type='text' class="form-control" placeholder="End Date & Time"/>
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div> 
+        <div class="cus-btn"><button class="btn btn-default" onclick="send()" >Add to Cart</button></div> 
+    </div>
 
     <!--footer -->
     <div class="footer">
