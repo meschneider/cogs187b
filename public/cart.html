@@ -179,10 +179,11 @@
     <!--end mobile navigation-->
 
     <div class="cart-container">
-        <h1 color="purple"><center>Cart</center></h1>
+        <h1><center>Cart</center></h1>
+        <p id="empty"> You're cart is empty.</p>
     </div>
 
-    <section>
+    <section style="margin-bottom:50px;padding-bottom:0px;">
     </section>
 
     <div class="cus-btn">
@@ -209,6 +210,10 @@
                     window.location.replace("http://localhost:21023/cart.html");
                 }
             });
+        }
+        if($("section").length ==0){
+            console.log($("section").length);
+            $("#empty").hide();
         }
     </script>
     <!--end of function-->

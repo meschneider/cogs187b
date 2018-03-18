@@ -282,8 +282,8 @@ section {
 
 /*-------------------- cart.html styling --------------------*/
 .cart-container{
-  padding-top: 100px;
-  padding-left:50px;
+  padding-top: 50px;
+  margin-bottom:100px;
 }
 .cart-container h1{
   color:#8558B5;
@@ -304,6 +304,10 @@ section {
 }
 .cart-container button:hover {
   background-color: #5B5D62;
+}
+.cart-container h1{
+  text-color:#8558B5;
+  font-size: 4vmin;
 }
 
 /*-------------------- mobile styling --------------------*/
