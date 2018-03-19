@@ -64,7 +64,7 @@ p{
   display:none;
 }
 .navbar-brand {
-  font-size: 4vmin;
+  font-size: 4vmin !important;
 }
 .dropdown {
   font-size: 3vmin;
@@ -209,8 +209,6 @@ section {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 25px;
-  /* padding so the bottom of the div isn't cut off by the footer */
-  padding-bottom: 1700px;
 }
 .packages {
   margin-top:10px;
@@ -249,7 +247,7 @@ section {
 /*------------------- contact.html styling -------------------*/
 
 .contact-title{
-  padding-top: 100px;
+  padding-top: 75px;
   text-align: center;
 }
 .contact-container{
@@ -306,8 +304,8 @@ section {
 
 /*-------------------- cart.html styling --------------------*/
 .cart-container{
-  padding-top: 50px;
-  margin-bottom:100px;
+  padding-top: 75px;
+  padding-bottom:10px;
 }
 .cart-container h1{
   color:#8558B5;

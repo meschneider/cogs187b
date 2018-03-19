@@ -27,6 +27,15 @@
         .navbar{
             background-color: #8558B5 !important;
         }
+        .parallax {
+          /*background: url(img/chano.jpg)no-repeat center;*/
+          min-height: 430px;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        #map_canvas{width:100%px;height:400px;margin-top:200px;margin-bottom:150px;}
     </style>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
@@ -51,6 +60,31 @@
                 x.style.display = "none";
             }
         }
+    </script>
+    
+    <script>
+        var map;
+        function initMap() {
+            var mapOptions = {
+                zoom: 13,
+                center: new google.maps.LatLng(37.424725, -122.098171),
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                scroll:{x:$(window).scrollLeft(),y:$(window).scrollTop()}
+            };
+            map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+            new google.maps.Marker({map:map,position:map.getCenter()});
+            var offset=$(map.getDiv()).offset();
+            map.panBy(((mapOptions.scroll.x-offset.left)/2.25),((mapOptions.scroll.y-offset.top)/2.25));
+            google.maps.event.addDomListener(window, 'scroll', function(){
+                var scrollY=$(window).scrollTop(),
+                scrollX=$(window).scrollLeft(),
+                scroll=map.get('scroll');
+                if(scroll){
+                    map.panBy(-((scroll.x-scrollX)/2),-((scroll.y-scrollY)/2));
+                }
+                map.set('scroll',{x:scrollX,y:scrollY})
+            });
+        }   
     </script>
 
   </head>
@@ -149,34 +183,38 @@
     <div class="about-contact">
         <center><h1 style="color:#8558B5">Visit Us</h1></center><br>
         <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <!--google maps-->
-                <div class="map-responsive">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12674.354759901193!2d-122.10701183260826!3d37.423195640082966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba1106b93351%3A0xe2bc8e33cf9fd58c!2s936+Industrial+Ave%2C+Palo+Alto%2C+CA+94303!5e0!3m2!1sen!2sus!4v1519720897367" width="450" height="337.5" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
+            <div class="col-md-4 about">
+                <center><h4><span class="glyphicon glyphicon-envelope"></span> Email</h4></center>
+                <p><a href="mailto:info@peninsulaparty.com">info@peninsulaparty.com</a></p>
             </div>
-            <!--about us details-->
-            <div class="col-md-6 col-sm-12">
-                <ul style="list-style-type:none; padding:0;">
-                    <li><h4>Location</h4></li>
-                    <p><a href="https://www.google.com/maps/place/936+Industrial+Ave,+Palo+Alto,+CA+94303/@37.4231956,-122.1004511,17z/data=!4m5!3m4!1s0x808fba1106b93351:0xe2bc8e33cf9fd58c!8m2!3d37.4231914!4d-122.0982571936 Industrial Ave, Palo Alto, CA 94303">936 Industrial Ave, Palo Alto, CA 94303</a></p>
-                    <li><h4>Hours</h4></li>
-                    <p>8am - 5pm</p>
-                    <li><h4>Phone Number</h4></li>
-                    <p><a href="tel:650-213-8000">650-213-8000</a></p>
-                    <li><h4>Email</h4></li>
-                    <p><a href="mailto:info@peninsulaparty.com">info@peninsulaparty.com</a></p>
-                </ul>
+            <div class="col-md-4 about">
+                <center><h4><span class="glyphicon glyphicon-time"></span> Hours</h4></center>
+                <p>8am - 5pm</p>
+            </div>
+            <div class="col-md-4 about">
+                <center><h4><span class="glyphicon glyphicon-earphone"></span> Phone Number</h4></center>
+                <p><a href="tel:650-213-8000">650-213-8000</a></p>
             </div>
         </div>
     </div>
+
+        <!--google maps-->
+        <div class="row top-buffer">
+            <center><h4><span class="glyphicon glyphicon-map-marker"></span> Location</h4></center>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12674.354759901193!2d-122.10701183260826!3d37.423195640082966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba1106b93351%3A0xe2bc8e33cf9fd58c!2s936+Industrial+Ave%2C+Palo+Alto%2C+CA+94303!5e0!3m2!1sen!2sus!4v1519720897367" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
     <!--end of contact information-->
 
+    <div id="map_canvas"></div>
+   
     <!--footer -->
     <div class="footer">
         <h6>© 2018 Peninsula Party Rentals. All rights reserved.</h6>
     </div>
     <!--end footer-->
+
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-iVzP9E_dZ8TIfe05gH01ReiP9VCl7JU&callback=initMap" type="text/javascript"></script>
 
   </body>
 

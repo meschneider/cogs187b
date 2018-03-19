@@ -88,6 +88,7 @@
                 htmlText += '<br><br>';
 
                 $('section').append(htmlText);
+                $("#empty").hide();
             });
         }
         function getBalloon(k, id, start, end){
@@ -105,16 +106,11 @@
                 htmlText += '<div class="cus-btn"><button class="btn btn-default" onclick="remove(' + k + ')">Remove</button>';
                 htmlText += '</div>';
                 htmlText += '</div>';
-                htmlText += '<br><br>';
+                htmlText += '<br><br><br>';
 
                 $('section').append(htmlText);
+                $("#empty").hide();
             });
-            if($("section").length == 0){
-            console.log("meow");
-            var contents = $('#section');
-            console.log(contents);
-            $("#empty").hide();
-        }
         }
     </script>
     <!--end script function-->
@@ -187,15 +183,17 @@
 
     <div class="cart-container">
         <h1><center>Cart</center></h1>
-        <!--<div id="empty" style="text-align:center;"> Your cart is empty.</div>-->
+    </div>
+    <div id="empty">
+        <div class="cus-btn">
+            <p style="text-align:center;"> Your cart is empty.</p>
+            <br>
+            <button class="btn btn-default center-block" style="margin-bottom:50px;font-size: 3vmin;">Browse Our Selection</button>
+        </div>
     </div>
 
     <section style="margin-bottom:10px;padding-bottom:0px;">
     </section>
-
-    <div class="cus-btn">
-        <button class="btn btn-default center-block" style="margin-bottom:50px;font-size: 3vmin;">Browse Our Selection</button>
-    </div>
     
     <!--fixed footer-->
     <div class="footer">

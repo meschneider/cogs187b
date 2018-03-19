@@ -3,7 +3,7 @@
 
   <head>
 
-    <title>About</title>
+    <title>Browse Selection</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
 
     <!--CSS file-->
-    <link href="css/index.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
 
@@ -47,9 +47,33 @@
         }
     </script>
 
-  </head>
+    <!--script function to render json data to html page-->
+    <script>
+    $(function() {
+        $.getJSON('selection.json', function(data) {
+            $.each(data.selection, function(i, key) {
+                var htmlText = '';
 
-  <body>
+                htmlText += '<div class="col-md-4 col-sm-12">';
+                htmlText += '<div class="row packages">';
+                htmlText += '<h1>' + key.name + '</h1><br>';
+                htmlText += '<img src="' + key.picture + '">';
+                htmlText += '<br><br><p> Price: ' + key.price + '</p>';
+                htmlText += '<p> ' + key.description + '</p>';
+                htmlText += '<a href="productpage.html?balloonID=' + key.balloonID + '"><div class="cus-btn"><button class="btn btn-default" type="submit">Purchase</button></div></a>';
+                htmlText += '</div>';
+                htmlText += '</div>';
+
+                $('section').append(htmlText);
+            });
+        });
+    });
+    </script>
+    <!--end script function-->
+
+    </head>
+
+    <body>
 
     <!--desktop navigation-->
     <div class="desktop-navbar">
@@ -113,52 +137,25 @@
     </div>
     <!--end mobile navigation-->
 
-    <!--about us title, description, and picture-->
-    <div class="hero-image" style="background-image: url('img/about.png');">
+    <!--banner image-->
+    <div class="hero-image" style="background-image: url('../img/balloons.jpg');">
         <div class="hero-text">
-            <h1 class="packages">We deliver happiness!</h1>
+            <h1>Our Selection</h1>
         </div>
     </div>
-    <!--end about us description and picture-->
+    <!--end banner image-->
 
-    <!--contact information-->
-    <div class="about-contact">
-      <div class="row">
-        <p>We are the Bay Area’s source for discount party rentals and supplies. We are headquartered in Mountain View and service the Peninsula, South Bay and San Francisco Area.  We provide top quality party rentals and supplies for birthday parties, corporate events, church and non-profit events at the best prices possible. Our friendly staff is always available to answer any questions.</p>
-        <br>
-        <center> <h3>Courtesy | Professionalism | Honesty</h3></center>
-        <p>We treat our customers with respect and courtesy expected from a respected enterprise, we deliver on our promises and only ask for what's fair, most times less but never more.</p> </div><br>
-        <center><h1 style="color:#8558B5">Visit Us</h1></center><br>
-        <div class="row">
-            <div class="col-md-4 about">
-                <center><h4><span class="glyphicon glyphicon-envelope"></span> Email</h4></center>
-                <p><a href="mailto:info@peninsulaparty.com">info@peninsulaparty.com</a></p>
-            </div>
-            <div class="col-md-4 about">
-                <center><h4><span class="glyphicon glyphicon-time"></span> Hours</h4></center>
-                <p>8am - 5pm</p>
-            </div>
-            <div class="col-md-4 about">
-                <center><h4><span class="glyphicon glyphicon-earphone"></span> Phone Number</h4></center>
-                <p><a href="tel:650-213-8000">650-213-8000</a></p>
-            </div>
-        </div>
-
-        <!--google maps-->
-        <div class="row top-buffer">
-            <center><h4><span class="glyphicon glyphicon-map-marker"></span> Location</h4></center>
-            <div class="map-responsive">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12674.354759901193!2d-122.10701183260826!3d37.423195640082966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba1106b93351%3A0xe2bc8e33cf9fd58c!2s936+Industrial+Ave%2C+Palo+Alto%2C+CA+94303!5e0!3m2!1sen!2sus!4v1519720897367" width="450" height="337.5" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-        </div>
+    <div class="balloon-spacing">
+        <!--section that json data is posted to-->
+        <section>
+        </section>
     </div>
-    <!--end of contact information-->
 
     <!--footer -->
     <div class="footer">
         <h6>© 2018 Peninsula Party Rentals. All rights reserved.</h6>
     </div>
-    <!--end footer-->
+    <!--end of footer -->
 
   </body>
 
