@@ -261,6 +261,9 @@ section {
   padding-bottom:56.25%;
   position:relative;
   height:0;
+  max-width: 700px;
+  max-height: 50px;
+  margin: auto;
 }
 .map-responsive iframe{
   left:0;
@@ -269,6 +272,10 @@ section {
   width:100%;
   position:absolute;
 }
+.row.top-buffer {
+  margin-top:20px;
+ }
+
 
 /*-------------------- about.html styling --------------------*/
 .about-company{
@@ -286,6 +293,15 @@ section {
   padding-right:5%;
   /* padding so the bottom of the div isn't cut off by the footer */
   padding-bottom: 100px;
+}
+
+.col-md-4.about {
+  background-color: #f5f3f3;
+  padding: 20px;
+  outline: 2px solid #ccc;
+  outline-offset: -10px;
+  -moz-outline-radius: 10px;
+  -webkit-outline-radius: 10px;
 }
 
 /*-------------------- cart.html styling --------------------*/
