@@ -5,152 +5,133 @@
            "picture": "img/package1.png",
            "name": "Basic Party Package",
            "description": "Includes: 1 13'X13' jumper, 3 6' children's tables, 24 children chairs, and 12 helium balloons.",
-           "file": "packages.json",
-           "altID": 0
-       },
+           "ID": "packages_product.html?packageID=0"
+          },
        {
            "price": "$149.00",
            "picture": "img/package2.png",
            "name": "Cotton Candy Package",
            "description": "Includes: Includes: 1 13'X13' jumper and 1 cotton candy machine with 100 servings.",
-           "file": "packages.json",
-           "altID": 1
+           "ID": "packages_product.html?packageID=1"
        },
        {
            "price": "$149.00",
            "picture": "img/package3.png",
            "name": "Popcorn Party Package",
            "description": "Includes: 1 13'X13' jumper and 1 popcorn machine with 100 servings.",
-           "file": "packages.json",
-           "altID": 2
+           "ID": "packages_product.html?packageID=2"
        },
        {
            "price": "$149.00",
            "picture": "img/package4.png",
            "name": "Snowcone Package",
            "description": "Includes: 1 13' x 13' jumper, 1 snow cone machine, 3 syrup flavors, 100 spoon straws, and 100 snow cone cones. PLEASE NOTE: ice is not included.",
-           "file": "packages.json",
-           "altID": 3
+           "ID": "packages_product.html?packageID=3"
            },
        {
            "price": "$189.00",
            "picture": "img/package5.png",
            "name": "Margarita Memories",
            "description": "Includes: 2 sigle bowl margarita machines, 2 frozen margarita flavors, 100 9oz. tumblers, and 1 margarita salt rimmer.",
-           "file": "packages.json",
-           "altID": 4
+           "ID": "packages_product.html?packageID=4"
            },
        {
            "price": "$199.00",
            "picture": "img/package6.png",
            "name": "Cotton Candy Dreams",
            "description": "Includes: 1 13'X13' jumper, 1 cotton candy machine with 100 servings, 3 6' children's tables, 24 children's chairs, and 12 helium balloons.",
-           "file": "packages.json",
-           "altID": 5
+           "ID": "packages_product.html?packageID=5"
             },
        {
            "price": "$79.00",
            "picture": "img/package7.png",
            "name": "Balloon Party 1",
            "description": "Includes: 1 55cf helium tank, 75 balloons, 1 balloon ribbon roll, and 1 helium tilt adaptor. PLEASE NOTE:",
-           "file": "packages.json",
-           "altID": 6
+           "ID": "packages_product.html?packageID=6"
             },
        {
            "price": "$169.00",
            "picture": "img/package8.png",
            "name": "Balloon Party 2",
            "description": "Includes: 1 helium tank 110CF., 200 latex balloons 11', 1 ribbon roll 350yd., and 1 tilt helium adaptor. PLEASE NOTE:",
-           "file": "packages.json",
-           "altID": 7
+           "ID": "packages_product.html?packageID=7"
             },
        {
            "price": "$215.00",
            "picture": "img/package9.png",
            "name": "Basic Party Package 2",
            "description": "Includes: one 4 in 1 combo, 3 6' tables, 24 white samsonite chairs, and 12 helium balloons.",
-           "file": "packages.json",
-           "altID": 8
+           "ID": "packages_product.html?packageID=8"
           },
         {
             "name": "Single Helium Balloon",
             "price": "$1.50",
             "picture": "../img/balloonsingle.png",
             "description": "Choose your colors before ordering.",
-            "file":"balloons.json",
-            "altID": 0
+            "ID":"productpage.html?balloonID=0"
           },
         {
             "name": "Helium Balloons, Printed",
             "price": "$1.75",
             "picture": "../img/balloonprinted.jpg",
             "description": "11in, printed balloons.",
-            "file":"balloons.json",
-            "altID": 1
+            "ID":"productpage.html?balloonID=1"
           },
         {
             "name": "Helium Birthday Balloon Bouquet",
             "price": "$23.99",
             "picture": "../img/birthdayboquet.jpg",
             "description": "Includes 6 11in printed helium balloons and 2 mylar 18in balloons.",
-            "file":"balloons.json",
-            "altID": 2
+            "ID":"productpage.html?balloonID=2"
           },
         {
             "name": "Helium Balloon Bouquet (6 per)",
             "price": "$13.99",
             "picture": "../img/balloonboquet61.png",
             "description": "6 Helium balloons with weight.",
-            "file":"balloons.json",
-            "altID": 3
+            "ID":"productpage.html?balloonID=3"
           },
         {
             "name": "Helium Balloon Bouquet (10 Per)",
             "price": "$19.99",
             "picture": "../img/balloonboquet.png",
             "description": "10 Helium balloons with weight.",
-            "file":"balloons.json",
-            "altID": 4
+            "ID":"productpage.html?balloonID=4"
           },
         {
             "name": "Helium Balloon Bouquet (12 per)",
             "price": "$22.99",
             "picture": "../img/balloonboquet.png",
             "description": "12 Helium Balloons with weight.",
-            "file":"balloons.json",
-            "altID": 5
+            "ID":"productpage.html?balloonID=5"
           },
         {
             "name": "Helium balloon Arch 10x10",
             "price": "$200.00",
             "picture": "../img/balloonarch.png",
             "description": "10' Wide X 10' Tall.",
-            "file":"balloons.json",
-            "altID": 6
+            "ID":"productpage.html?balloonID=6"
           },
         {
             "name": "Helium balloon Arch 10x10 Linked",
             "price": "$85.00",
             "picture": "../img/balloonlink.jpg",
             "description": "10' wide x10 tall.",
-            "file":"balloons.json",
-            "altID": 7
+            "ID":"productpage.html?balloonID=7"
           },
         {
             "name": "Balloon Drop, 100 balloons",
             "price": "$125.00",
             "picture": "../img/balloondrop.jpg",
             "description": "Includes 100 9in balloons.",
-            "file":"balloons.json",
-            "altID": 8
+            "ID":"productpage.html?balloonID=8"
           },
         {
             "name": "Balloon Colums 7'",
             "price": "$75.00",
             "picture": "../img/ballooncolumn.png",
             "description": "7' high colums with giant balloon on top.",
-            "file":"balloons.json",
-            "altID": 9
+            "ID":"productpage.html?balloonID=9"
           }
    ]
 }

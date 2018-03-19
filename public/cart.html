@@ -101,8 +101,8 @@
                 htmlText += '</div>';
                 htmlText += '<div class="col-md-6 col-sm-12">';
                 htmlText += '<h1> ' + data.balloons[id].name + '</h1>';
-                htmlText += '<p style="text-align:left;"> Price: ' + data.balloons[id].price + '</p>';
-                htmlText += '<p style="text-align:left;"> ' + data.balloons[id].description + '</p>';
+                htmlText += '<p> Price: ' + data.balloons[id].price + '</p>';
+                htmlText += '<p> ' + data.balloons[id].description + '</p>';
                 htmlText += '<div class="cus-btn"><button class="btn btn-default" onclick="remove(' + k + ')">Remove</button>';
                 htmlText += '</div>';
                 htmlText += '</div>';
@@ -188,12 +188,13 @@
         <div class="cus-btn">
             <p style="text-align:center;"> Your cart is empty.</p>
             <br>
-            <button class="btn btn-default center-block" style="margin-bottom:50px;font-size: 3vmin;">Browse Our Selection</button>
+            <a href="browseselection.html"><button class="btn btn-default center-block" style="margin-bottom:50px;font-size: 3vmin;">Browse Our Selection</button></a>
         </div>
     </div>
 
-    <section style="margin-bottom:10px;padding-bottom:0px;">
-    </section>
+    <div id="cart-section">
+        <section></section>
+    </div>
     
     <!--fixed footer-->
     <div class="footer">

@@ -209,7 +209,7 @@ p{
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 25px;
-  padding-bottom:2900px;
+  padding-bottom:1500px;
 }
 .packages {
   margin-top:10px;
@@ -323,12 +323,22 @@ p{
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
-.cart-container button:hover {
-  background-color: #5B5D62;
+.cart-container a{
+  text-decoration: none !important;
 }
 .cart-container h1{
   text-color:#8558B5;
   font-size: 4vmin;
+}
+#cart-section{
+  padding-left:15px;
+  padding-right:15px;
+}
+#cart-section p{
+  text-align:left;
+}
+#empty a{
+  text-decoration: none;
 }
 
 /*-------------------- packages_product styling --------------------*/
@@ -340,6 +350,12 @@ p{
 #package-product-section
 p{
   text-align:left;
+}
+
+/*-------------------- browse styling --------------------*/
+.balloon-spacing{
+  padding-left:15px;
+  padding-right:15px;
 }
 
 /*-------------------- mobile styling --------------------*/
@@ -378,7 +394,7 @@ p{
 
   /*--------------------- navbar styling ---------------------*/
   .navbar-brand {
-    font-size: 5vmin;
+    font-size: 5vmin !important;
   }
   .desktop-navbar{
     display:none;
@@ -441,7 +457,7 @@ p{
     display: inline-block;
   }
   .sidenav .product-drop a{
-    font-size: 5vmin;
+    font-size: 4.5vmin;
     padding-left: 45px;
   }
 /*-------------------- footer styling --------------------*/
