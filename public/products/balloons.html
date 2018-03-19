@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
 
-    <title>Packages</title>
+    <title>Balloons</title>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
 
     <!--CSS file-->
-    <link href="css/index.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
 
@@ -48,17 +50,17 @@
     <!--script function to render json data to html page-->
     <script>
     $(function() {
-        $.getJSON('packages.json', function(data) {
-            $.each(data.packages, function(i, key) {
+        $.getJSON('balloons.json', function(data) {
+            $.each(data.balloons, function(i, key) {
                 var htmlText = '';
 
-                htmlText += '<div class="col-md-6 col-sm-12">';
+                htmlText += '<div class="col-md-4 col-sm-12">';
                 htmlText += '<div class="row packages">';
-                htmlText += '<h1>' + key.packagename + '</h1><br>';
+                htmlText += '<h1>' + key.name + '</h1><br>';
                 htmlText += '<img src="' + key.picture + '">';
                 htmlText += '<br><br><p> Price: ' + key.price + '</p>';
-                htmlText += '<p> ' + key.details + '</p>';
-                htmlText += '<a href="packages_product.html?packageID=' + key.packageID + '"><div class="cus-btn"><button class="btn btn-default" type="submit">Rent</button></div></a>';
+                htmlText += '<p> ' + key.description + '</p>';
+                htmlText += '<a href="productpage.html?balloonID=' + key.balloonID + '"><div class="cus-btn"><button class="btn btn-default" type="submit">Purchase</button></div></a>';
                 htmlText += '</div>';
                 htmlText += '</div>';
 
@@ -78,27 +80,27 @@
         <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="50">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">Peninsula Party</a>
+                    <a class="navbar-brand" href="../index.html">Peninsula Party</a>
                 </div>
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown">Products</a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" style="background-color: #8558B5;">
                             <li><a href="balloons.html">Balloons & Decorations</a></li>
-                            <li><a href="#">Cups & Utensils</a></li>
-                            <li><a href="#">Games</a></li>
-                            <li><a href="#">Jumpers</a></li>
-                            <li><a href="#">Machines & Accessories</a></li>
-                            <li><a href="#">Outdoor</a></li>
-                            <li><a href="#">Tables, Chairs, & Accessories</a></li>
+                            <li><a href="cups&utensils.html">Cups & Utensils</a></li>
+                            <li><a href="games.html">Games</a></li>
+                            <li><a href="jumpers.html">Jumpers</a></li>
+                            <li><a href="machines&accessories.html">Machines & Accessories</a></li>
+                            <li><a href="outdoor.html">Outdoor</a></li>
+                            <li><a href="tables_chairs_accessories.html">Tables, Chairs, & Accessories</a></li>
                         </ul>
                     </li>
-                    <li class="menu"><a href="packages.html">Packages</a></li>
-                    <li class="menu"><a href="about.html">About</a></li>
-                    <li class="menu"><a href="contact.html">Contact</a></li>
+                    <li class="menu"><a href="../packages.html">Packages</a></li>
+                    <li class="menu"><a href="../about.html">About</a></li>
+                    <li class="menu"><a href="../contact.html">Contact</a></li>
                 </ul>
                 <div class="navbar-right">
-                    <a href="cart.html"><img src="img/shopping-cart.png" alt="shopping cart" style="width:32px;height:32px;"></a>
+                    <a href="cart.html"><img src="../img/shopping-cart.png" alt="shopping cart" style="width:32px;height:32px;"></a>
                 </div>
             </div>
         </nav>
@@ -110,7 +112,7 @@
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">Peninsula Party</a>
+                    <a class="navbar-brand" href="../index.html">Peninsula Party</a>
                     <span onclick="openNav()">&#9776;</span>
                 </div>
             </div>
@@ -121,44 +123,38 @@
         <a onclick="productDrop()">Products<b class = "caret"></b></a>
         <div class="product-drop" id="product-drop" style="display:none;">
             <a href="balloons.html">Balloons & Decorations</a>
-            <a href="#">Cups & Utensils</a>
-            <a href="#">Games</a>
-            <a href="#">Jumpers</a>
-            <a href="#">Machines & Accessories</a>
-            <a href="#">Outdoor</a>
-            <a href="#">Tables, Chairs, & Accessories</a>
+            <a href="cups&utensils.html">Cups & Utensils</a>
+            <a href="games.html">Games</a>
+            <a href="jumpers.html">Jumpers</a>
+            <a href="machines&accessories.html">Machines & Accessories</a>
+            <a href="outdoor.html">Outdoor</a>
+            <a href="tables_chairs_accessories.html">Tables, Chairs, & Accessories</a>
         </div>
-        <a href="packages.html">Packages</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="../packages.html">Packages</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
     </div>
     <!--end mobile navigation-->
 
     <!--banner image-->
-    <div class="hero-image" style="background-image: url('img/popular.jpg');">
-      <div class="hero-text">
-          <h1 class="packages">Packages</h1>
-          <h3> The best deals and products combined.</h3>
-      </div>
+    <div class="hero-image" style="background-image: url('../img/balloons.jpg');">
+        <div class="hero-text">
+            <h1>Balloons & Decorations</h1>
+        </div>
     </div>
-
-
     <!--end banner image-->
 
-    <!--section that json data is posted to-->
-    <section>
-        <div class="row">
-            <p>Don't see what you need? Call <a href="tel:650-213-8000">650-213-8000</a> to inquire about a customized package.</p>
-        </div>
-    </section>
+    <div class="balloon-spacing">
+        <!--section that json data is posted to-->
+        <section>
+        </section>
+    </div>
 
     <!--footer -->
     <div class="footer">
         <h6>© 2018 Peninsula Party Rentals. All rights reserved.</h6>
     </div>
     <!--end of footer -->
-
-    <div class="bounce-black">
 
   </body>
 
