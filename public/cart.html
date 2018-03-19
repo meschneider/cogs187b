@@ -109,6 +109,12 @@
 
                 $('section').append(htmlText);
             });
+            if($("section").length == 0){
+            console.log("meow");
+            var contents = $('#section');
+            console.log(contents);
+            $("#empty").hide();
+        }
         }
     </script>
     <!--end script function-->
@@ -175,15 +181,16 @@
         <a href="packages.html">Packages</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart</a>
     </div>
     <!--end mobile navigation-->
 
     <div class="cart-container">
         <h1><center>Cart</center></h1>
-        <p id="empty"> You're cart is empty.</p>
+        <!--<div id="empty" style="text-align:center;"> Your cart is empty.</div>-->
     </div>
 
-    <section style="margin-bottom:50px;padding-bottom:0px;">
+    <section style="margin-bottom:10px;padding-bottom:0px;">
     </section>
 
     <div class="cus-btn">
@@ -210,10 +217,6 @@
                     window.location.replace("http://localhost:21023/cart.html");
                 }
             });
-        }
-        if($("section").length ==0){
-            console.log($("section").length);
-            $("#empty").hide();
         }
     </script>
     <!--end of function-->
