@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
 
-    <title>Packages</title>
+    <title>Contact</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,6 +25,15 @@
     <style>
         .navbar{
             background-color: #8558B5 !important;
+        }
+        .col-md-4 .img-responsive{
+            padding-bottom: 15%;
+        }
+        @media screen and (max-width: 768px) {
+            .col-md-4 .img-responsive{
+                padding-bottom: 0px !important;
+                padding-top:15px;
+            }
         }
     </style>
 
@@ -74,18 +84,16 @@
                 var htmlText = '';
 
                 htmlText += '<div class="row">';
-                htmlText += '<div class="col-md-6 col-sm-12">';
+                htmlText += '<div class="col-sm-12 col-md-4">';
                 htmlText += '<img src="' + data.packages[id].picture + '" class="img-responsive">';
                 htmlText += '</div>';
-                htmlText += '<div class="col-md-6 col-sm-12">';
+                htmlText += '<div class="col-sm-12 col-md-8">';
                 htmlText += '<h2> ' + data.packages[id].packagename + '</h2>';
                 htmlText += '<p> Price: ' + data.packages[id].price + '</p>';
                 htmlText += '<p> ' + data.packages[id].details + '</p>';
                 htmlText += '<div class="cus-btn"><button class="btn btn-default" onclick="remove(' + k + ')">Remove</button>';
                 htmlText += '</div>';
                 htmlText += '</div>';
-
-                htmlText += '<br><br>';
 
                 $('section').append(htmlText);
                 $("#empty").hide();
@@ -96,10 +104,10 @@
                 var htmlText = '';
 
                 htmlText += '<div class="row">';
-                htmlText += '<div class="col-md-6 col-sm-12">';
+                htmlText += '<div class="col-sm-12 col-md-4">';
                 htmlText += '<img src="' + data.balloons[id].picture + '" class="img-responsive">';
                 htmlText += '</div>';
-                htmlText += '<div class="col-md-6 col-sm-12">';
+                htmlText += '<div class="col-sm-12 col-md-8">';
                 htmlText += '<h2> ' + data.balloons[id].name + '</h2>';
                 htmlText += '<p> Price: ' + data.balloons[id].price + '</p>';
                 htmlText += '<p> ' + data.balloons[id].description + '</p>';
