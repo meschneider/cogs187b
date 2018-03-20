@@ -228,6 +228,54 @@ p{
   bottom: 80px;
 }
 
+/*------------------ balloons.html styling ------------------*/
+.balloons-section section {
+  padding-left: 50px;
+  padding-top: 25px;
+  padding-bottom:1800px;
+}
+.balloons {
+  margin-top:10px;
+  margin-right:5px;
+}
+.balloons h1{
+  color:#8558B5;
+}
+.balloons img{
+  width:85%;
+}
+.balloons a:hover{
+  text-decoration: none;
+}
+.hero-text h3 {
+  position: relative;
+  bottom: 80px;
+}
+
+/*------------------ browse.html styling ------------------*/
+.browse-section section {
+  padding-left: 50px;
+  padding-top: 25px;
+  padding-bottom:3200px;
+}
+.browse {
+  margin-top:10px;
+  margin-right:5px;
+}
+.browse h1{
+  color:#8558B5;
+}
+.browse img{
+  width:85%;
+}
+.browse a:hover{
+  text-decoration: none;
+}
+.hero-text h3 {
+  position: relative;
+  bottom: 80px;
+}
+
 /*-------testimonials-----*/
 .col-sm-6.home {
   background-color: #f5f3f3;
@@ -476,6 +524,42 @@ p{
     padding-bottom:100px;
   }
   .packages-section .col-sm-12{
+    padding-right: 0px !important;
+  }
+
+  /*-------------------- balloons.html styling --------------------*/
+  .balloons img{
+    width:100%;
+  }
+  .balloons h1{
+    font-size: 6vmin;
+  }
+  .balloons-section section {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    /* padding so the bottom of the div isn't cut off by the footer */
+    padding-bottom:100px;
+  }
+  .balloons-section .col-sm-12{
+    padding-right: 0px !important;
+  }
+
+  /*-------------------- browse.html styling --------------------*/
+  .browse img{
+    width:100%;
+  }
+  .browse h1{
+    font-size: 6vmin;
+  }
+  .browse-section section {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    /* padding so the bottom of the div isn't cut off by the footer */
+    padding-bottom:100px;
+  }
+  .browse-section .col-sm-12{
     padding-right: 0px !important;
   }
 
