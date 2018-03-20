@@ -232,7 +232,7 @@ p{
 .balloons-section section {
   padding-left: 50px;
   padding-top: 25px;
-  padding-bottom:1800px;
+  padding-bottom:1875px;
 }
 .balloons {
   margin-top:10px;
@@ -285,10 +285,10 @@ p{
   -moz-outline-radius: 10px;
   -webkit-outline-radius: 10px;
 }
-
 #test {
   font-size: 3.5vmin;
 }
+
 /*------------------- contact.html styling -------------------*/
 
 .contact-title{
@@ -412,20 +412,20 @@ p{
     font-size: 6vmin !important;
   }
   h2{
-    font-size: 5.5vmin;
+    font-size: 5.5vmin!important;
   }
   h3{
-    font-size: 5vmin;
+    font-size: 5vmin!important;
   }
   h4{
-    font-size: 4.5vmin;
+    font-size: 4.5vmin!important;
     font-weight: bold;
   }
   h6{
-    font-size: 3vmin;
+    font-size: 3vmin!important;
   }
   p{
-    font-size: 4.25vmin;
+    font-size: 4.25vmin!important;
   }
   .cus-btn button{
     text-align: center;
@@ -516,6 +516,9 @@ p{
   .packages h1{
     font-size: 6vmin;
   }
+  .packages {
+    margin-right: 0px !important;
+  }
   .packages-section section {
     padding-left: 15px;
     padding-right: 15px;
@@ -534,6 +537,9 @@ p{
   .balloons h1{
     font-size: 6vmin;
   }
+  .balloons {
+    margin-right: 0px !important;
+  }
   .balloons-section section {
     padding-left: 15px;
     padding-right: 15px;
@@ -551,6 +557,9 @@ p{
   }
   .browse h1{
     font-size: 6vmin;
+  }
+  .browse {
+    margin-right: 0px !important;
   }
   .browse-section section {
     padding-left: 15px;
@@ -574,6 +583,15 @@ p{
   .hero-text button {
     font-size: 4.5vmin;
   }
+  .about-us{
+    padding-bottom:50px;
+  }
+  .testimonials h1{
+    text-align: center;
+  }
+  #test {
+    font-size: 5vmin;
+  }
 
 /*-------------------- about.html styling --------------------*/
   .about-company .ethics{
@@ -589,6 +607,12 @@ p{
   #empty button{
     width:50%;
     font-size: 4.5vmin !important;
+  }
+  .contact-container input#name, input#email, input#message{
+    font-size: 4.25vmin!important;
+  }
+  .contact-container textarea#message{
+    font-size: 4.25vmin!important;
   }
 }
 
