@@ -23,7 +23,7 @@ h1{
   font-size: 4vmin !important;
 }
 h2{
-  font-size: 3vmin;
+  font-size: 3.5vmin;
 }
 h3{
   font-size: 2.75vmin;
@@ -102,7 +102,7 @@ p{
   background-color: #9A75C2 !important;
 }
 .dropdown-menu > li > a:hover{
-  background-color: #6F459C !important;
+  background-color: #9A75C2 !important;
 }
 .navbar-right{
   padding-top:5px;
@@ -258,10 +258,21 @@ p{
 }
 
 /*------------------ browse.html styling ------------------*/
-.browse-section section {
+.browse-section section{
   padding-left: 50px;
   padding-top: 25px;
-  padding-bottom:3200px;
+}
+.browse-section #carnival {
+  padding-bottom:1050px !important;
+}
+.browse-section #corporate {
+  padding-bottom:900px !important;
+}
+.browse-section #backyard {
+  padding-bottom:925px !important;
+}
+.browse-section #popular {
+  padding-bottom:450px !important;
 }
 .browse {
   margin-top:10px;
@@ -595,6 +606,18 @@ p{
     background: rgba(127,127,127,0.8);
     margin-right: 10% !important;
     margin-left: 10% !important;
+  }
+  .browse-section #carnival {
+    padding-bottom:100px !important;
+  }
+  .browse-section #corporate {
+    padding-bottom:10px !important;
+  }
+  .browse-section #backyard {
+    padding-bottom:10px !important;
+  }
+  .browse-section #popular {
+    padding-bottom:10px !important;
   }
 
 /*-------------------- index.html styling --------------------*/

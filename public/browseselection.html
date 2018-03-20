@@ -51,12 +51,12 @@
     <script>
     $(function() {
         $.getJSON('selection.json', function(data) {
-            $.each(data.selection, function(i, key) {
+            $.each(data.popular, function(i, key) {
                 var htmlText = '';
 
                 htmlText += '<div class="col-md-4 col-sm-12">';
                 htmlText += '<div class="row browse">';
-                htmlText += '<h1>' + key.name + '</h1><br>';
+                htmlText += '<h2 style="color:#8558B5">' + key.name + '</h2><br>';
                 htmlText += '<img src="' + key.picture + '">';
                 htmlText += '<br><br><p> Price: ' + key.price + '</p>';
                 htmlText += '<p> ' + key.description + '</p>';
@@ -64,7 +64,64 @@
                 htmlText += '</div>';
                 htmlText += '</div>';
 
-                $('section').append(htmlText);
+                $('#popular').append(htmlText);
+            });
+        });
+    });
+    $(function() {
+        $.getJSON('selection.json', function(data) {
+            $.each(data.backyard, function(i, key) {
+                var htmlText = '';
+
+                htmlText += '<div class="col-md-4 col-sm-12">';
+                htmlText += '<div class="row browse">';
+                htmlText += '<h2 style="color:#8558B5">' + key.name + '</h2><br>';
+                htmlText += '<img src="' + key.picture + '">';
+                htmlText += '<br><br><p> Price: ' + key.price + '</p>';
+                htmlText += '<p> ' + key.description + '</p>';
+                htmlText += '<a href="' + key.ID + '"><div class="cus-btn"><button class="btn btn-default" type="submit">Purchase</button></div></a>';
+                htmlText += '</div>';
+                htmlText += '</div>';
+
+                $('#backyard').append(htmlText);
+            });
+        });
+    });
+    $(function() {
+        $.getJSON('selection.json', function(data) {
+            $.each(data.corporate, function(i, key) {
+                var htmlText = '';
+
+                htmlText += '<div class="col-md-4 col-sm-12">';
+                htmlText += '<div class="row browse">';
+                htmlText += '<h2 style="color:#8558B5">' + key.name + '</h2><br>';
+                htmlText += '<img src="' + key.picture + '">';
+                htmlText += '<br><br><p> Price: ' + key.price + '</p>';
+                htmlText += '<p> ' + key.description + '</p>';
+                htmlText += '<a href="' + key.ID + '"><div class="cus-btn"><button class="btn btn-default" type="submit">Purchase</button></div></a>';
+                htmlText += '</div>';
+                htmlText += '</div>';
+
+                $('#corporate').append(htmlText);
+            });
+        });
+    });
+    $(function() {
+        $.getJSON('selection.json', function(data) {
+            $.each(data.carnival, function(i, key) {
+                var htmlText = '';
+
+                htmlText += '<div class="col-md-4 col-sm-12">';
+                htmlText += '<div class="row browse">';
+                htmlText += '<h2 style="color:#8558B5">' + key.name + '</h2><br>';
+                htmlText += '<img src="' + key.picture + '">';
+                htmlText += '<br><br><p> Price: ' + key.price + '</p>';
+                htmlText += '<p> ' + key.description + '</p>';
+                htmlText += '<a href="' + key.ID + '"><div class="cus-btn"><button class="btn btn-default" type="submit">Purchase</button></div></a>';
+                htmlText += '</div>';
+                htmlText += '</div>';
+
+                $('#carnival').append(htmlText);
             });
         });
     });
@@ -148,8 +205,17 @@
     <!--end banner image-->
 
     <div class="browse-section">
-        <!--section that json data is posted to-->
-        <section>
+        <section id="popular">
+            <h1>Popular</h1>
+        </section>
+        <section id="backyard">
+            <h1>Backyard</h1>
+        </section>
+        <section id="corporate">
+            <h1>Corporate</h1>
+        </section>
+        <section id="carnival">
+            <h1>Carnival</h1>
         </section>
     </div>
 

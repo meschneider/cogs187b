@@ -1,67 +1,11 @@
 {
-   "selection": [
+   "popular":[
        {
            "price": "$129.00",
            "picture": "img/PackagesPackage-1.png",
            "name": "Basic Party Package",
-           "description": "Includes: 1 13'X13' jumper, 3 6' children's tables, 24 children chairs, and 12 helium balloons.",
+           "description": "1 13'X13' jumper, 3 6' kid's tables, 24 kids chairs, and 12 balloons.",
            "ID": "packages_product.html?packageID=0"
-          },
-       {
-           "price": "$149.00",
-           "picture": "img/PackagesPackage-2.png",
-           "name": "Cotton Candy Package",
-           "description": "Includes: Includes: 1 13'X13' jumper and 1 cotton candy machine with 100 servings.",
-           "ID": "packages_product.html?packageID=1"
-       },
-       {
-           "price": "$149.00",
-           "picture": "img/PackagesPackage-3.png",
-           "name": "Popcorn Party Package",
-           "description": "Includes: 1 13'X13' jumper and 1 popcorn machine with 100 servings.",
-           "ID": "packages_product.html?packageID=2"
-       },
-       {
-           "price": "$149.00",
-           "picture": "img/PackagesPackage-4.png",
-           "name": "Snowcone Package",
-           "description": "Includes: 1 13' x 13' jumper, 1 snow cone machine, 3 syrup flavors, 100 spoon straws, and 100 snow cone cones. PLEASE NOTE: ice is not included.",
-           "ID": "packages_product.html?packageID=3"
-           },
-       {
-           "price": "$189.00",
-           "picture": "img/PackagesPackage5.png",
-           "name": "Margarita Memories",
-           "description": "Includes: 2 sigle bowl margarita machines, 2 frozen margarita flavors, 100 9oz. tumblers, and 1 margarita salt rimmer.",
-           "ID": "packages_product.html?packageID=4"
-           },
-       {
-           "price": "$199.00",
-           "picture": "img/PackagesPackage6.png",
-           "name": "Cotton Candy Dreams",
-           "description": "Includes: 1 13'X13' jumper, 1 cotton candy machine with 100 servings, 3 6' children's tables, 24 children's chairs, and 12 helium balloons.",
-           "ID": "packages_product.html?packageID=5"
-            },
-       {
-           "price": "$79.00",
-           "picture": "img/PackagesPackage-7.png",
-           "name": "Balloon Party 1",
-           "description": "Includes: 1 55cf helium tank, 75 balloons, 1 balloon ribbon roll, and 1 helium tilt adaptor. PLEASE NOTE:",
-           "ID": "packages_product.html?packageID=6"
-            },
-       {
-           "price": "$169.00",
-           "picture": "img/PackagesPackage8.png",
-           "name": "Balloon Party 2",
-           "description": "Includes: 1 helium tank 110CF., 200 latex balloons 11', 1 ribbon roll 350yd., and 1 tilt helium adaptor. PLEASE NOTE:",
-           "ID": "packages_product.html?packageID=7"
-            },
-       {
-           "price": "$215.00",
-           "picture": "img/PackagesPackage9.png",
-           "name": "Basic Party Package 2",
-           "description": "Includes: one 4 in 1 combo, 3 6' tables, 24 white samsonite chairs, and 12 helium balloons.",
-           "ID": "packages_product.html?packageID=8"
           },
         {
             "name": "Single Helium Balloon",
@@ -71,38 +15,72 @@
             "ID":"productpage.html?balloonID=0"
           },
         {
-            "name": "Helium Balloons, Printed",
-            "price": "$1.75",
-            "picture": "../img/Packagesballoon2.png",
-            "description": "11in, printed balloons.",
-            "ID":"productpage.html?balloonID=1"
+            "name": "Helium balloon Arch 10x10 Linked",
+            "price": "$85.00",
+            "picture": "../img/Packagesballoon8.png",
+            "description": "10' wide x10 tall.",
+            "ID":"productpage.html?balloonID=7"
+          }
+   ], 
+
+   "backyard":[
+       {
+           "price": "$189.00",
+           "picture": "img/PackagesPackage5.png",
+           "name": "Margarita Memories",
+           "description": "Includes: 2 sigle bowl margarita machines, 2 frozen margarita flavors, 100 9oz. tumblers, and 1 margarita salt rimmer.",
+           "ID": "packages_product.html?packageID=4"
+           },
+       {
+           "price": "$215.00",
+           "picture": "img/PackagesPackage9.png",
+           "name": "Basic Party Package 2",
+           "description": "Includes: one 4 in 1 combo, 3 6' tables, 24 white samsonite chairs, and 12 helium balloons.",
+           "ID": "packages_product.html?packageID=8"
           },
         {
             "name": "Helium Birthday Balloon Bouquet",
             "price": "$23.99",
             "picture": "../img/Packagesballoon3.png",
-            "description": "Includes 6 11in printed helium balloons and 2 mylar 18in balloons.",
+            "description": "Includes: 6 11 in printed helium balloons and 2 mylar 18 in balloons. The perfect surprise for any birthday!",
             "ID":"productpage.html?balloonID=2"
           },
         {
             "name": "Helium Balloon Bouquet (6 per)",
             "price": "$13.99",
             "picture": "../img/Packagesballoon4.png",
-            "description": "6 Helium balloons with weight.",
+            "description": "6 Helium balloons with weight. Comes in various colors. Perfect as decorations or gifts.",
             "ID":"productpage.html?balloonID=3"
           },
-        {
-            "name": "Helium Balloon Bouquet (10 Per)",
-            "price": "$19.99",
-            "picture": "../img/Packagesballoon5.png",
-            "description": "10 Helium balloons with weight.",
-            "ID":"productpage.html?balloonID=4"
+      {
+           "price": "$149.00",
+           "picture": "img/PackagesPackage-2.png",
+           "name": "Cotton Candy Package",
+           "description": "Includes: Includes: 1 13'X13' jumper and 1 cotton candy machine with 100 servings.",
+           "ID": "packages_product.html?packageID=1"
+       }
+   ], 
+
+   "corporate":[
+       {
+           "price": "$169.00",
+           "picture": "img/PackagesPackage8.png",
+           "name": "Balloon Party 2",
+           "description": "Includes: 1 helium tank 110CF., 200 latex balloons 11', 1 ribbon roll 350yd., and 1 tilt helium adaptor.",
+           "ID": "packages_product.html?packageID=7"
+            },
+          {
+            "name": "Helium Balloons, Printed",
+            "price": "$1.75",
+            "picture": "../img/Packagesballoon2.png",
+            "description": "11 inch printed balloons. Available in a variety of colors. Custom printing is available.",
+            "ID":"productpage.html?balloonID=1"
           },
         {
             "name": "Helium Balloon Bouquet (12 per)",
             "price": "$22.99",
             "picture": "../img/Packagesballoon6.png",
-            "description": "12 Helium Balloons with weight.",
+            "description": "12 Helium Balloons with weight. These are 11in balloons and are available in a variety of colors.",
             "ID":"productpage.html?balloonID=5"
           },
         {
@@ -111,13 +89,6 @@
             "picture": "../img/Packagesballoon7.png",
             "description": "10' Wide X 10' Tall.",
             "ID":"productpage.html?balloonID=6"
-          },
-        {
-            "name": "Helium balloon Arch 10x10 Linked",
-            "price": "$85.00",
-            "picture": "../img/Packagesballoon8.png",
-            "description": "10' wide x10 tall.",
-            "ID":"productpage.html?balloonID=7"
           },
         {
             "name": "Balloon Drop, 100 balloons",
@@ -133,5 +104,43 @@
             "description": "7' high colums with giant balloon on top.",
             "ID":"productpage.html?balloonID=9"
           }
-   ]
+   ], 
+
+   "carnival":[
+       {
+           "price": "$149.00",
+           "picture": "img/PackagesPackage-3.png",
+           "name": "Popcorn Party Package",
+           "description": "Includes: 1 13'X13' jumper and 1 popcorn machine with 100 servings, this includes popcorn, butter, and decorated popcorn paper bags.",
+           "ID": "packages_product.html?packageID=2"
+       },
+       {
+           "price": "$149.00",
+           "picture": "img/PackagesPackage-4.png",
+           "name": "Snowcone Package",
+           "description": "Includes: 1 13' x 13' jumper, 1 snow cone machine, 3 syrup flavors, 100 spoon straws, and 100 snow cone cones. PLEASE NOTE: ice is not included.",
+           "ID": "packages_product.html?packageID=3"
+           },
+        {
+           "price": "$199.00",
+           "picture": "img/PackagesPackage6.png",
+           "name": "Cotton Candy Dreams",
+           "description": "Includes: 1 13'X13' jumper, 1 cotton candy machine with 100 servings, 3 6' children's tables, 24 children's chairs, and 12 helium balloons.",
+           "ID": "packages_product.html?packageID=5"
+            },
+       {
+           "price": "$79.00",
+           "picture": "img/PackagesPackage-7.png",
+           "name": "Balloon Party 1",
+           "description": "Includes: 1 55cf helium tank, 75 balloons, 1 balloon ribbon roll, and 1 helium tilt adaptor.",
+           "ID": "packages_product.html?packageID=6"
+            },
+        {
+            "name": "Helium Balloon Bouquet (10 Per)",
+            "price": "$19.99",
+            "picture": "../img/Packagesballoon5.png",
+            "description": "10 Helium balloons with weight. These are 11in balloons and are available in a variety of colors.",
+            "ID":"productpage.html?balloonID=4"
+          }
+   ] 
 }
