@@ -36,6 +36,14 @@
         .navbar{
             background-color: #8558B5 !important;
         }
+        .quantity{
+            padding-right:50px;
+        }
+        @media screen and (max-width: 768px) {
+            .quantity{
+                padding-right:0px !important;
+            }
+        }
     </style>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
@@ -78,6 +86,7 @@
                 htmlText += '<div class="row packages">';
                 htmlText += '<h1> ' + data.packages[id].packagename + '</h1>';
                 htmlText += '<p> Price: ' + data.packages[id].price + '</p>';
+                htmlText += '<div class="quantity"><h3><label for="exampleSelect1">Quantity</label><select class="form-control" id="exampleSelect1"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></h3></div>';
                 htmlText += '<p> ' + data.packages[id].details + '</p>';
                 htmlText += '</div>';
                 htmlText += '</div>';
@@ -192,7 +201,7 @@
                 </span>
             </div>
         </div> 
-        <div class="cus-btn"><button class="btn btn-default" onclick="send()" >Add to Cart</button></div> 
+        <div class="cus-btn"><button class="btn btn-default" onclick="send()">Add to Cart</button></div> 
     </div>
 
     <!--footer -->
