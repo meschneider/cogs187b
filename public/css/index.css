@@ -207,12 +207,12 @@ p{
 /* used to display the packages */
 .packages-section section {
   padding-left: 50px;
-  padding-right: 50px;
   padding-top: 25px;
   padding-bottom:1500px;
 }
 .packages {
   margin-top:10px;
+  margin-right:5px;
 }
 .packages h1{
   color:#8558B5;
@@ -474,6 +474,9 @@ p{
     padding-top: 15px;
     /* padding so the bottom of the div isn't cut off by the footer */
     padding-bottom:100px;
+  }
+  .packages-section .col-sm-12{
+    padding-right: 0px !important;
   }
 
 /*-------------------- index.html styling --------------------*/

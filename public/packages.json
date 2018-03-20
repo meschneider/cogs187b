@@ -2,63 +2,63 @@
    "packages": [
        {
            "price": "$129.00",
-           "picture": "img/package1.png",
+           "picture": "img/PackagesPackage-1.png",
            "packagename": "Basic Party Package",
            "details": "Includes: 1 13'X13' jumper, 3 6' children's tables, 24 children chairs, and 12 helium balloons.",
            "packageID": 0
        },
        {
            "price": "$149.00",
-           "picture": "img/package2.png",
+           "picture": "img/PackagesPackage-2.png",
            "packagename": "Cotton Candy Package",
            "details": "Includes: Includes: 1 13'X13' jumper and 1 cotton candy machine with 100 servings.",
            "packageID": 1
        },
        {
            "price": "$149.00",
-           "picture": "img/package3.png",
+           "picture": "img/PackagesPackage-3.png",
            "packagename": "Popcorn Party Package",
            "details": "Includes: 1 13'X13' jumper and 1 popcorn machine with 100 servings.",
            "packageID": 2
        },
        {
            "price": "$149.00",
-           "picture": "img/package4.png",
+           "picture": "img/PackagesPackage-4.png",
            "packagename": "Snowcone Package",
            "details": "Includes: 1 13' x 13' jumper, 1 snow cone machine, 3 syrup flavors, 100 spoon straws, and 100 snow cone cones. PLEASE NOTE: ice is not included.",
            "packageID": 3
            },
        {
            "price": "$189.00",
-           "picture": "img/package5.png",
+           "picture": "img/PackagesPackage5.png",
            "packagename": "Margarita Memories",
-           "details": "Includes: 2 sigle bowl margarita machines, 2 frozen margarita flavors, 100 9oz. tumblers, and 1 margarita salt rimmer.",
+           "details": "Includes: 2 sigle bowl margarita machines, 2 frozen margarita flavors, 100 9oz. tumblers, and 1 margarita salt rimmer. Tequila not included.",
            "packageID": 4
            },
        {
            "price": "$199.00",
-           "picture": "img/package6.png",
+           "picture": "img/PackagesPackage6.png",
            "packagename": "Cotton Candy Dreams",
            "details": "Includes: 1 13'X13' jumper, 1 cotton candy machine with 100 servings, 3 6' children's tables, 24 children's chairs, and 12 helium balloons.",
            "packageID": 5
             },
        {
            "price": "$79.00",
-           "picture": "img/package7.png",
+           "picture": "img/PackagesPackage-7.png",
            "packagename": "Balloon Party 1",
            "details": "Includes: 1 55cf helium tank, 75 balloons, 1 balloon ribbon roll, and 1 helium tilt adaptor. PLEASE NOTE:",
            "packageID": 6
             },
        {
            "price": "$169.00",
-           "picture": "img/package8.png",
+           "picture": "img/PackagesPackage8.png",
            "packagename": "Balloon Party 2",
            "details": "Includes: 1 helium tank 110CF., 200 latex balloons 11', 1 ribbon roll 350yd., and 1 tilt helium adaptor. PLEASE NOTE:",
            "packageID": 7
             },
        {
            "price": "$215.00",
-           "picture": "img/package9.png",
+           "picture": "img/PackagesPackage9.png",
            "packagename": "Basic Party Package 2",
            "details": "Includes: one 4 in 1 combo, 3 6' tables, 24 white samsonite chairs, and 12 helium balloons.",
            "packageID": 8
