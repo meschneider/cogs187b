@@ -134,8 +134,7 @@
     </div>
 
     <!--contact form-->
-    <div class="contact-container">
-        <form action="">
+    <div class="contact-container">  
         <div class="row">
             <div class="col-6 col-sm-12">
                 <input type="text" id="name" name="name" placeholder="Name" style="width: 100%;padding: 10px;margin-bottom: 15px;">
@@ -146,9 +145,8 @@
             <div class="col-6 col-sm-12">
                 <textarea id="message" name="message" placeholder="How can we help you?" style="width: 100%;height:200px;padding: 10px;margin-bottom: 15px;"></textarea>
             </div>
-            <div class="cus-btn"><button class="btn btn-default center-block" type="submit">Submit</button></div>
+            <div class="cus-btn"><button class="btn btn-default center-block" onclick="submit()">Submit</button></div>
         </div>
-        </form>
     </div>
     <!--end form-->
 
@@ -183,6 +181,13 @@
         <h6>© 2018 Peninsula Party Rentals. All rights reserved.</h6>
     </div>
     <!--end footer-->
+
+    <script>
+        function submit(){
+            alert("Your message has been sent! We will get back to you shortly.");
+            window.location.replace("contact.html");
+        }
+    </script>
 
   </body>
 
