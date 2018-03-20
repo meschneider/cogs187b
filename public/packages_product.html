@@ -36,9 +36,6 @@
         .navbar{
             background-color: #8558B5 !important;
         }
-        .quantity{
-            padding-right:50px;
-        }
         @media screen and (max-width: 768px) {
             .quantity{
                 padding-right:0px !important;
@@ -86,7 +83,6 @@
                 htmlText += '<div class="row packages">';
                 htmlText += '<h1> ' + data.packages[id].packagename + '</h1>';
                 htmlText += '<p> Price: ' + data.packages[id].price + '</p>';
-                htmlText += '<div class="quantity"><h3><label for="exampleSelect1">Quantity</label><select class="form-control" id="exampleSelect1"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></h3></div>';
                 htmlText += '<p> ' + data.packages[id].details + '</p>';
                 htmlText += '</div>';
                 htmlText += '</div>';
@@ -184,6 +180,9 @@
     </div>
         
     <div class="container" style="padding-bottom:40px;">
+        <div class="col-md-6 col-sm-12" style="padding-left:0px;padding-right:0px;">
+        <div class="quantity"><h3><label for="exampleSelect1">Quantity</label><select class="form-control" id="exampleSelect1"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></h3></div>
+
         <h3>Check Avalibility</h3>
         <div class="form-group">
             <div class='input-group date' id='datetimepicker6'>
@@ -203,6 +202,7 @@
         </div> 
         <div class="cus-btn"><button class="btn btn-default" onclick="send()">Add to Cart</button></div> 
     </div>
+</div>
 
     <!--footer -->
     <div class="footer">
@@ -221,12 +221,17 @@
                 alert("Please check end avalibility.")
             }
             var idNum = window.location.href.split('=').pop();
+            var e = document.getElementById("exampleSelect1");
+            var quant = e.options[e.selectedIndex].value;
+
             $.ajax({
                 url: "/ajax/request?action=post",
                 type: "post",
                 data: {
                     file: "packages.json",
                     id: idNum,
+                    color: "none",
+                    quantity: quant,
                     start: $('#datetimepicker6').data("DateTimePicker").date().toString(),
                     end: $('#datetimepicker7').data("DateTimePicker").date().toString()
                 },
