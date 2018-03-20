@@ -1,15 +1,15 @@
 /*--------------------- font ------------------*/
 @font-face {
-    font-family: BrixSansRegular;
+    font-family: BrixSansRegular !important;
     src: url(BrixSansRegular.otf);
 }
 @font-face {
-    font-family: BrixSansRegular;
+    font-family: BrixSansRegular !important;
     src: url(BrixSansMedium.otf);
 }
 div {
-    font-family: BrixSansRegular;
-    font-family: BrixSansMedium;
+    font-family: BrixSansRegular !important;
+    font-family: BrixSansMedium !important;
 }
 
 /*--------------------- general styling ---------------------*/
@@ -102,7 +102,7 @@ p{
   background-color: #9A75C2 !important;
 }
 .dropdown-menu > li > a:hover{
-  background-color: #6F459C;
+  background-color: #6F459C !important;
 }
 .navbar-right{
   padding-top:5px;
@@ -128,7 +128,7 @@ p{
   color: white;
 }
 .hero-text h1{
-  background: rgba(127,127,127,0.5);
+  background: rgba(127,127,127,0.6);
   border-radius: 15px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -227,6 +227,11 @@ p{
   position: relative;
   bottom: 80px;
 }
+.hero-text .packages-herotext h1{
+  background: rgba(127,127,127,0.5);
+  margin-right: 40% !important;
+  margin-left: 40% !important;
+}
 
 /*------------------ balloons.html styling ------------------*/
 .balloons-section section {
@@ -274,6 +279,11 @@ p{
 .hero-text h3 {
   position: relative;
   bottom: 80px;
+}
+.hero-text .browse-herotext h1{
+  background: rgba(127,127,127,0.8);
+  margin-right: 40% !important;
+  margin-left: 40% !important;
 }
 
 /*-------testimonials-----*/
@@ -336,7 +346,6 @@ p{
   /* padding so the bottom of the div isn't cut off by the footer */
   padding-bottom: 100px;
 }
-
 .col-md-4.about {
   background-color: #f5f3f3;
   padding: 20px;
@@ -345,10 +354,15 @@ p{
   -moz-outline-radius: 10px;
   -webkit-outline-radius: 10px;
 }
+.hero-text .about-herotext h1{
+  background: rgba(127,127,127,0.7);
+  margin-right: 36% !important;
+  margin-left: 36% !important;
+}
 
 /*-------------------- cart.html styling --------------------*/
 .cart-container{
-  padding-top: 75px;
+  padding-top: 60px;
   padding-bottom:10px;
 }
 .cart-container h1{
@@ -378,6 +392,7 @@ p{
 #cart-section{
   padding-left:15px;
   padding-right:15px;
+  margin-bottom:100px;
 }
 #cart-section p{
   text-align:left;
@@ -529,6 +544,11 @@ p{
   .packages-section .col-sm-12{
     padding-right: 0px !important;
   }
+  .hero-text .packages-herotext h1{
+    background: rgba(127,127,127,0.5);
+    margin-right: 10% !important;
+    margin-left: 10% !important;
+  }
 
   /*-------------------- balloons.html styling --------------------*/
   .balloons img{
@@ -571,6 +591,11 @@ p{
   .browse-section .col-sm-12{
     padding-right: 0px !important;
   }
+  .hero-text .browse-herotext h1{
+    background: rgba(127,127,127,0.8);
+    margin-right: 10% !important;
+    margin-left: 10% !important;
+  }
 
 /*-------------------- index.html styling --------------------*/
   .hero-text h1{
@@ -600,6 +625,11 @@ p{
   .about-pic img{
     display: block;
     margin: 0 auto;
+  }
+  .hero-text .about-herotext h1{
+    background: rgba(127,127,127,0.7);
+    margin-right: 10% !important;
+    margin-left: 10% !important;
   }
 
 /*-------------------- contact.html styling --------------------*/
