@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
 
-    <title>Contact</title>
+    <title>Cart</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,6 +12,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <!-- used for date picker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+
     <!--icon-->
     <link rel="icon" type="image/png" href="img/logo_transparent.png">
 
@@ -21,6 +28,9 @@
 
     <!--CSS file-->
     <link href="css/index.css" rel="stylesheet">
+
+    <script src="hhttps://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/locale/af.js"></script>
+
     <!--non-transparent navbar for product pages-->
     <style>
         .navbar{
@@ -59,6 +69,21 @@
                 x.style.display = "none";
             }
         }   
+
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker6').datetimepicker();
+            $('#datetimepicker7').datetimepicker({
+                useCurrent: false //Important! See issue #1075
+            });
+            $("#datetimepicker6").on("dp.change", function (e) {
+                $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+            });
+            $("#datetimepicker7").on("dp.change", function (e) {
+                $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+            });
+        });
     </script>
 
     <!--script function to render json data to html page-->
@@ -70,7 +95,7 @@
                 success: function (data) {
                     $.each(data.cart, function(k, v) {
                         if(v.file == "packages.json"){
-                            getPackage(k, v.id, v.start, v.end);
+                            getPackage(k, v.id, v.start, v.end, v.color, v.quantity);
                         }
                         else{
                             getBalloon(k, v.id, v.start, v.end);
@@ -79,7 +104,7 @@
                 }
             });
         });
-        function getPackage(k, id, start, end){
+        function getPackage(k, id, start, end, color, quantity){
             $.getJSON('packages.json', function(data) {
                 var htmlText = '';
 
@@ -91,6 +116,8 @@
                 htmlText += '<h2> ' + data.packages[id].packagename + '</h2>';
                 htmlText += '<p> Price: ' + data.packages[id].price + '</p>';
                 htmlText += '<p> ' + data.packages[id].details + '</p>';
+                htmlText += '<div class="col-sm-12 col-md-4"><div class="quantity"><p><label for="exampleSelect1">Quantity</label><select class="form-control" id="exampleSelect1"><option selected>' + quantity + '</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></p></div></div>';
+                htmlText += '<p>Selected Dates</p><div class="col-sm-12 col-md-4"><div class="form-group"><div class="input-group date" id="datetimepicker6"><input type="text" class="form-control" placeholder="' + start + '"/><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span></div></div></div><div class="col-sm-12 col-md-4"><div class="form-group"><div class="input-group date" id="datetimepicker7"><input type="text" class="form-control" placeholder="' + end + '"/><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span></div></div></div> ';
                 htmlText += '<div class="cus-btn"><button class="btn btn-default" onclick="remove(' + k + ')">Remove</button>';
                 htmlText += '</div>';
                 htmlText += '</div>';
@@ -99,7 +126,7 @@
                 $("#empty").hide();
             });
         }
-        function getBalloon(k, id, start, end){
+        function getBalloon(k, id, start, end, color, quantity){
             $.getJSON('balloons.json', function(data) {
                 var htmlText = '';
 
