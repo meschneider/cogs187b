@@ -72,7 +72,7 @@ p{
 .menu {
   font-size: 3vmin;
 }
-.dropdown:hover .dropdown-menu {
+.navbar .dropdown:hover .dropdown-menu {
   display: block;
 }
 .navbar{
@@ -226,9 +226,6 @@ p{
 .hero-text h3 {
   position: relative;
   bottom: 80px;
-}
-.row p {
-  text-align: center;
 }
 
 /*-------testimonials-----*/
@@ -453,7 +450,7 @@ p{
     display: inline-block;
   }
   .navbar .dropdown-menu li{
-    position: relative;
+    position: relative !important;
     display: inline-block;
   }
   .sidenav .product-drop a{

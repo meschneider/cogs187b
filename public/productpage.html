@@ -22,6 +22,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
 
+    <!--color selector-->
+    <link href="lib/bootstrap-3.0.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap-colorselector-0.2.0/css/bootstrap-colorselector.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/docs.css" />
+    <script src="lib/bootstrap-3.0.3/js/bootstrap.min.js"></script>
+    <script src="lib/bootstrap-colorselector-0.2.0/js/bootstrap-colorselector.js"></script>
+
     <!--icon-->
     <link rel="icon" type="image/png" href="img/logo_transparent.png">
 
@@ -36,12 +43,12 @@
         .navbar{
             background-color: #8558B5 !important;
         }
-        .quantity{
-            padding-right:50px;
-        }
         @media screen and (max-width: 768px) {
             .quantity{
                 padding-right:0px !important;
+            }
+            .dropdown-colorselector>.dropdown-menu{
+                left:-7px;
             }
         }
     </style>
@@ -71,6 +78,11 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
+        $(function() {
+
+        $('#colorselector_1').colorselector();
+
+      });
     </script>
 
     <!--navbar product drop down on mobile-->
@@ -101,8 +113,7 @@
                 htmlText += '<div class="row packages">';
                 htmlText += '<h1>' + data.balloons[id].name + '</h1><br>';
                 htmlText += '<p> Price: ' + data.balloons[id].price + '</p>';
-                htmlText += '<div class="quantity"><h3><label for="exampleSelect1">Quantity</label><select class="form-control" id="exampleSelect1"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></h3></div>';
-                htmlText += '<p> ' + data.balloons[id].description + '</p><br>';
+                htmlText += '<p> ' + data.balloons[id].description + '</p>';
                 htmlText += '</div>';
                 htmlText += '</div>';
 
@@ -178,11 +189,35 @@
     <!--end mobile navigation-->
 
     <div id="package-product-section">
-        <section style="padding-top:60px; padding-bottom:0px;">
+        <section style="padding-top:60px;">
         </section>
     </div>
 
     <div class="container" style="padding-bottom:40px;">
+        <div class="col-md-6 col-sm-12" style="padding-left:0px;padding-right:0px;">
+
+        <select id="colorselector_1" style="position:relative;">
+            <option value="106" data-color="#A0522D">sienna</option>
+            <option value="47" data-color="#CD5C5C" selected="selected">indianred</option>
+            <option value="87" data-color="#FF4500">orangered</option>
+            <option value="17" data-color="#008B8B">darkcyan</option>
+            <option value="18" data-color="#B8860B">darkgoldenrod</option>
+            <option value="68" data-color="#32CD32">limegreen</option>
+            <option value="42" data-color="#FFD700">gold</option>
+            <option value="77" data-color="#48D1CC">mediumturquoise</option>
+            <option value="107" data-color="#87CEEB">skyblue</option>
+            <option value="46" data-color="#FF69B4">hotpink</option>
+            <option value="47" data-color="#CD5C5C">indianred</option>
+            <option value="64" data-color="#87CEFA">lightskyblue</option>
+            <option value="13" data-color="#6495ED">cornflowerblue</option>
+            <option value="15" data-color="#DC143C">crimson</option>
+            <option value="24" data-color="#FF8C00">darkorange</option>
+            <option value="78" data-color="#C71585">mediumvioletred</option>
+            <option value="123" data-color="#000000">black</option>
+        </select>
+
+        <div class="quantity"><h3><label for="exampleSelect1">Quantity</label><select class="form-control" id="exampleSelect1"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></h3></div>
+
         <h3>Check Avalibility</h3>
         <div class="form-group">
             <div class='input-group date' id='datetimepicker6'>
@@ -202,6 +237,7 @@
         </div> 
         <div class="cus-btn"><button class="btn btn-default" onclick="send()" >Add to Cart</button></div> 
     </div>
+</div>
 
     <!--footer -->
     <div class="footer">
