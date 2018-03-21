@@ -373,8 +373,7 @@ p{
 
 /*-------------------- cart.html styling --------------------*/
 .cart-container{
-  padding-top: 60px;
-  padding-bottom:10px;
+  padding-top: 50px;
 }
 .cart-container h1{
   color:#8558B5;

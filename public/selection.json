@@ -26,14 +26,14 @@
    "backyard":[
        {
            "price": "$189.00",
-           "picture": "img/PackagesPackage5.png",
+           "picture": "img/Packagespackage5.png",
            "name": "Margarita Memories",
            "description": "Includes: 2 sigle bowl margarita machines, 2 frozen margarita flavors, 100 9oz. tumblers, and 1 margarita salt rimmer.",
            "ID": "packages_product.html?packageID=4"
            },
        {
            "price": "$215.00",
-           "picture": "img/PackagesPackage9.png",
+           "picture": "img/Packagespackage9.png",
            "name": "Basic Party Package 2",
            "description": "Includes: one 4 in 1 combo, 3 6' tables, 24 white samsonite chairs, and 12 helium balloons.",
            "ID": "packages_product.html?packageID=8"
@@ -64,7 +64,7 @@
    "corporate":[
        {
            "price": "$169.00",
-           "picture": "img/PackagesPackage8.png",
+           "picture": "img/Packagespackage8.png",
            "name": "Balloon Party 2",
            "description": "Includes: 1 helium tank 110CF., 200 latex balloons 11', 1 ribbon roll 350yd., and 1 tilt helium adaptor.",
            "ID": "packages_product.html?packageID=7"
@@ -116,21 +116,21 @@
        },
        {
            "price": "$149.00",
-           "picture": "img/PackagesPackage-4.png",
+           "picture": "img/Packagespackage-4.png",
            "name": "Snowcone Package",
            "description": "Includes: 1 13' x 13' jumper, 1 snow cone machine, 3 syrup flavors, 100 spoon straws, and 100 snow cone cones. PLEASE NOTE: ice is not included.",
            "ID": "packages_product.html?packageID=3"
            },
         {
            "price": "$199.00",
-           "picture": "img/PackagesPackage6.png",
+           "picture": "img/Packagespackage6.png",
            "name": "Cotton Candy Dreams",
            "description": "Includes: 1 13'X13' jumper, 1 cotton candy machine with 100 servings, 3 6' children's tables, 24 children's chairs, and 12 helium balloons.",
            "ID": "packages_product.html?packageID=5"
             },
        {
            "price": "$79.00",
-           "picture": "img/PackagesPackage-7.png",
+           "picture": "img/Packagespackage-7.png",
            "name": "Balloon Party 1",
            "description": "Includes: 1 55cf helium tank, 75 balloons, 1 balloon ribbon roll, and 1 helium tilt adaptor.",
            "ID": "packages_product.html?packageID=6"
