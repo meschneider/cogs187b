@@ -126,9 +126,12 @@
                 htmlText += '<h2> ' + data.packages[id].packagename + '</h2>';
                 htmlText += '<p> Price: ' + data.packages[id].price + '</p>';
                 htmlText += '<p> ' + data.packages[id].details + '</p>';
-                htmlText += '<div class="col-sm-12 col-md-4"><div class="quantity"><p><select class="form-control" id="exampleSelect1"><option selected>Quantity: ' + quantity + '</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></p></div></div>';
-                htmlText += '<div class="col-sm-12 col-md-4"><div class="form-group"><div class="input-group date" id="datetimepicker6"><input type="text" class="form-control" placeholder="Start: ' + start + '"/><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span></div></div></div><div class="col-sm-12 col-md-4"><div class="form-group"><div class="input-group date" id="datetimepicker7"><input type="text" class="form-control" placeholder="End: ' + end + '"/><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span></div></div></div> ';
+                htmlText += '</div>';
+                htmlText += '<div class="col-sm-12 col-md-2"><div class="quantity"><p><select class="form-control" id="exampleSelect1"><option selected>Quantity: ' + quantity + '</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></p></div></div>';
+                htmlText += '<div class="col-sm-12 col-md-3"><div class="form-group"><div class="input-group date" id="datetimepicker6"><input type="text" class="form-control" placeholder="Start: ' + start + '"/><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span></div></div></div><div class="col-sm-12 col-md-3"><div class="form-group"><div class="input-group date" id="datetimepicker7"><input type="text" class="form-control" placeholder="End: ' + end + '"/><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span></div></div></div> ';
+                htmlText += '<div class="col-sm-12 col-md-4">';
                 htmlText += '<div class="cus-btn"><button class="btn btn-default" onclick="remove(' + k + ')">Remove</button>';
+                htmlText += '</div>';
                 htmlText += '</div>';
                 htmlText += '</div>';
 
@@ -149,13 +152,15 @@
                 htmlText += '<h2> ' + data.balloons[id].name + '</h2>';
                 htmlText += '<p> Price: ' + data.balloons[id].price + '</p>';
                 htmlText += '<p> ' + data.balloons[id].description + '</p>';
+                htmlText += '</div>';
                 //htmlText += '<select id="colorselector_1" style="position:relative;"><option value="106" data-color="#A0522D">sienna</option><option value="47" data-color="#CD5C5C" selected="selected">indianred</option><option value="87" data-color="#FF4500">orangered</option><option value="17" data-color="#008B8B">darkcyan</option><option value="18" data-color="#B8860B">darkgoldenrod</option><option value="68" data-color="#32CD32">limegreen</option><option value="42" data-color="#FFD700">gold</option><option value="77" data-color="#48D1CC">mediumturquoise</option><option value="107" data-color="#87CEEB">skyblue</option><option value="46" data-color="#FF69B4">hotpink</option><option value="47" data-color="#CD5C5C">indianred</option><option value="64" data-color="#87CEFA">lightskyblue</option><option value="13" data-color="#6495ED">cornflowerblue</option><option value="15" data-color="#DC143C">crimson</option><option value="24" data-color="#FF8C00">darkorange</option><option value="78" data-color="#C71585">mediumvioletred</option><option value="123" data-color="#000000">black</option></select>';
-                htmlText += '<div class="col-sm-12 col-md-6"><div class="quantity"><select class="form-control" id="exampleSelect1"><option selected>Quantity: ' + quantity + '</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></p></div></div>';
-                htmlText += '<div class="col-sm-12 col-md-6"><div class="form-group"><div class="input-group date" id="datetimepicker6"><input type="text" class="form-control" placeholder="Event Date: ' + start + '"/><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span></div></div></div>';
+                htmlText += '<div class="col-sm-12 col-md-2"><div class="quantity"><select class="form-control" id="exampleSelect1"><option selected>Quantity: ' + quantity + '</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></p></div></div>';
+                htmlText += '<div class="col-sm-12 col-md-3"><div class="form-group"><div class="input-group date" id="datetimepicker6"><input type="text" class="form-control" placeholder="Event Date: ' + start + '"/><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span></div></div></div>';
+                htmlText += '<div class="col-sm-12 col-md-4">';
                 htmlText += '<div class="cus-btn"><button class="btn btn-default" onclick="remove(' + k + ')">Remove</button>';
                 htmlText += '</div>';
                 htmlText += '</div>';
-                htmlText += '<br><br><br>';
+                htmlText += '</div>';
 
                 $('section').append(htmlText);
                 $("#empty").hide();
