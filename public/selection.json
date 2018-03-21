@@ -10,14 +10,14 @@
         {
             "name": "Single Helium Balloon",
             "price": "$1.50",
-            "picture": "../img/Packagesballoon1.png",
+            "picture": "img/Packagesballoon1.png",
             "description": "Choose your colors before ordering.",
             "ID":"productpage.html?balloonID=0"
           },
         {
             "name": "Helium balloon Arch 10x10 Linked",
             "price": "$85.00",
-            "picture": "../img/Packagesballoon8.png",
+            "picture": "img/Packagesballoon8.png",
             "description": "10' wide x10 tall.",
             "ID":"productpage.html?balloonID=7"
           }
@@ -41,14 +41,14 @@
         {
             "name": "Helium Birthday Balloon Bouquet",
             "price": "$23.99",
-            "picture": "../img/Packagesballoon3.png",
+            "picture": "img/Packagesballoon3.png",
             "description": "Includes: 6 11 in printed helium balloons and 2 mylar 18 in balloons. The perfect surprise for any birthday!",
             "ID":"productpage.html?balloonID=2"
           },
         {
             "name": "Helium Balloon Bouquet (6 per)",
             "price": "$13.99",
-            "picture": "../img/Packagesballoon4.png",
+            "picture": "img/Packagesballoon4.png",
             "description": "6 Helium balloons with weight. Comes in various colors. Perfect as decorations or gifts.",
             "ID":"productpage.html?balloonID=3"
           },
@@ -72,35 +72,35 @@
           {
             "name": "Helium Balloons, Printed",
             "price": "$1.75",
-            "picture": "../img/Packagesballoon2.png",
+            "picture": "img/Packagesballoon2.png",
             "description": "11 inch printed balloons. Available in a variety of colors. Custom printing is available.",
             "ID":"productpage.html?balloonID=1"
           },
         {
             "name": "Helium Balloon Bouquet (12 per)",
             "price": "$22.99",
-            "picture": "../img/Packagesballoon6.png",
+            "picture": "img/Packagesballoon6.png",
             "description": "12 Helium Balloons with weight. These are 11in balloons and are available in a variety of colors.",
             "ID":"productpage.html?balloonID=5"
           },
         {
             "name": "Helium balloon Arch 10x10",
             "price": "$200.00",
-            "picture": "../img/Packagesballoon7.png",
+            "picture": "img/Packagesballoon7.png",
             "description": "10' Wide X 10' Tall.",
             "ID":"productpage.html?balloonID=6"
           },
         {
             "name": "Balloon Drop, 100 balloons",
             "price": "$125.00",
-            "picture": "../img/Packagesballoon9.png",
+            "picture": "img/Packagesballoon9.png",
             "description": "Includes 100 9in balloons.",
             "ID":"productpage.html?balloonID=8"
           },
         {
             "name": "Balloon Colums 7'",
             "price": "$75.00",
-            "picture": "../img/Packagesballoon10.png",
+            "picture": "img/Packagesballoon10.png",
             "description": "7' high colums with giant balloon on top.",
             "ID":"productpage.html?balloonID=9"
           }
@@ -138,7 +138,7 @@
         {
             "name": "Helium Balloon Bouquet (10 Per)",
             "price": "$19.99",
-            "picture": "../img/Packagesballoon5.png",
+            "picture": "img/Packagesballoon5.png",
             "description": "10 Helium balloons with weight. These are 11in balloons and are available in a variety of colors.",
             "ID":"productpage.html?balloonID=4"
           }
